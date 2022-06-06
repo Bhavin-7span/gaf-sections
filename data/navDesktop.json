@@ -1,0 +1,88 @@
+[
+      {
+        "label": "Our Vision",
+         "items": [
+          {
+            "label": "About us"
+          },
+          {
+            "label": "Our People"
+          },
+          {
+             "items": [
+              {
+                "label": "Publications "
+              },
+              {
+                "label": "Annual reports"
+              },
+              {
+                "label": "Campus Newsletter"
+              }
+            ]
+          }
+        ],
+        "card" : {
+          "image": "images/card-image.png",
+          "title": "Card Title",
+          "desc": "This round is for Major grants and program areas by invitation only.",
+          "button": "Find out more"
+        }
+      },
+      {
+        "label": "About"
+      },
+      {
+        "label": "What We Support",
+         "items": [
+          {
+            "label": "Program Areas",
+             "items": [
+              {
+                "label": "Arts"
+              },
+              {
+                "label": "Community Wellbeing"
+              },
+              {
+                "label": "Early Childhood Development"
+              },
+              {
+                "label": "Environmental Conservation"
+              },
+              {
+                "label": "Medical Research"
+              },
+              {
+                "label": "Public Health Research"
+              }
+            ]
+          },
+          {
+            "label": "Major Grants"
+          },
+          {
+            "label": "Sub-Funds"
+          }
+        ],
+        "card" : {
+          "image": "images/card-image.png",
+          "title": "Card Title",
+          "desc": "This round is for Major grants and program areas by invitation only.",
+          "button": "Find out more"
+        }
+      },
+      {
+        "label": "Can We Apply"
+      },
+      {
+        "label": "Grantees"
+      },
+      {
+        "label": "Knowledge Center"
+      },
+      {
+        "label": "News"
+      }
+]
+  

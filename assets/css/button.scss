@@ -1,0 +1,134 @@
+.button {
+  @apply inline-flex items-center justify-center rounded whitespace-nowrap;
+
+  &:hover {
+    .button__arrow {
+      &:after,
+      &:before {
+        @apply translate-x-3;
+      }
+    }
+  }
+
+  .button__icon {
+    @apply mr-2 h-5;
+  }
+}
+
+.button--md {
+  @apply h-12 px-8;
+
+  &.button--icon {
+    @apply w-12;
+  }
+}
+
+.button--lg {
+  @apply h-16 px-8;
+
+  .button__icon {
+    @apply mr-2 h-5;
+  }
+
+  &.button--icon {
+    @apply w-12;
+  }
+}
+
+.button--sm {
+  @apply h-10 px-3 lg:px-7;
+
+  .button__icon {
+    @apply mr-2 h-4;
+  }
+
+  &.button--icon {
+    @apply h-10;
+  }
+}
+
+.button--link {
+  @apply px-0 h-auto;
+}
+
+.button--edge {
+  @apply px-0;
+}
+
+.button--icon {
+  @apply px-0;
+  .button__icon {
+    @apply mr-0;
+  }
+}
+
+.button--p1 {
+  &.button--solid {
+    @apply bg-p1-500 text-white;
+    @apply hover:bg-p1-700;
+  }
+
+  &.button--outline {
+    @apply border-2 border-p1-500 ;
+    @apply hover:bg-p1-500 hover:text-white;
+  }
+
+  &.button--link {
+    @apply text-p1-500;
+  }
+}
+
+.button--p2 {
+  &.button--muted {
+    @apply bg-p2-300 ;
+    @apply hover:bg-p2-500;
+  }
+}
+
+
+.button--white {
+  &.button--trn {
+    @apply text-white;
+  }
+
+  &.button--outline {
+    @apply border-2 border-p1-500 ;
+    @apply hover:bg-white hover:text-p1-500 ;
+  }
+}
+
+
+
+.button__arrow {
+  @apply h-0.5 w-9 relative;
+  background-color: currentColor;
+  position: relative;
+  margin-left: 12px;
+
+  &:after {
+    transition: transform 0.3s ease 0s;
+    content: '';
+    @apply w-2.5 h-2.5 transform rotate-45;
+    border-top: 0.125rem solid currentColor;
+    border-right: 0.125rem solid currentColor;
+    position: absolute;
+    right: 0;
+    top: -0.25rem;
+    display: block;
+  }
+  &:before {
+    content: '';
+    transition: transform 0.3s ease 0s;
+    background-color: currentColor;
+    @apply block h-0.5 w-9 transform;
+  }
+}
+
+.button-link {
+  @apply h-5  font-medium text-b3 flex items-center;
+ 
+}
+
+.button-link__icon {
+  @apply h-5 mr-2;
+}
