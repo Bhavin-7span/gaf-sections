@@ -73,9 +73,11 @@ module.exports = {
         500: "#7FE27B",
       },
       p2: {
+        900: "#302e2a",
         500: "#676784",
         300: "#443F3F",
       },
+
       white: "#ffffff",
       black: "#000000",
       transparent: "transparent",
