@@ -1,11 +1,11 @@
 <template>
   <div class="sections">
     <!-- Header : Starts -->
-    <TheHeader />
+    <!-- <TheHeader /> -->
     <!-- Header : Ends -->
 
     <!-- Header:Mobile : Starts-->
-    <TheHeaderMobile />
+    <!-- <TheHeaderMobile /> -->
     <!-- Header:Mobile : Ends-->
 
     <HeaderStandard />

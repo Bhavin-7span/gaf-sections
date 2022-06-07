@@ -87,28 +87,33 @@ module.exports = {
       white: '#ffffff',
       black: '#000000',
       transparent: 'transparent',
+        900: "#302e2a",
+        500: "#676784",
+        300: "#443F3F",
+      },
+
     },
-    extend: {
-      screens: {
-        '3xl': '2560px',
-        '4xl': '3840px',
-      },
-      width: extendedColumnWidths(),
-      margin: gridOffsets(),
-      borderRadius: {
-        xl: '0.75rem',
-        '2xl': '1rem',
-        '3xl': '1.25rem',
-      },
-      lineClamp: {
-        8: '8',
-        10: '10',
-        12: '12',
-        14: '14',
-        16: '16',
-      },
+  extend: {
+    screens: {
+      '3xl': '2560px',
+      '4xl': '3840px',
+    },
+    width: extendedColumnWidths(),
+    margin: gridOffsets(),
+    borderRadius: {
+      xl: '0.75rem',
+      '2xl': '1rem',
+      '3xl': '1.25rem',
+    },
+    lineClamp: {
+      8: '8',
+      10: '10',
+      12: '12',
+      14: '14',
+      16: '16',
     },
   },
+
 
   variants: {
     extend: {
@@ -117,4 +122,6 @@ module.exports = {
       
     },
   },
-}
+  }
+
+
