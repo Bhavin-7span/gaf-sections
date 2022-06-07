@@ -69,63 +69,63 @@
 export default {
   items: [
     {
-      label: 'Our Vision',
+      label: "Our Vision",
     },
     {
-      label: 'About',
+      label: "About",
     },
     {
-      label: 'What We Support',
+      label: "What We Support",
       items: [
         {
-          label: 'Program Areas',
+          label: "Program Areas",
           items: [
             {
-              label: 'Arts',
+              label: "Arts",
             },
             {
-              label: 'Community Wellbeing',
+              label: "Community Wellbeing",
             },
             {
-              label: 'Early Childhood Development',
+              label: "Early Childhood Development",
             },
             {
-              label: 'Environmental Conservation',
+              label: "Environmental Conservation",
             },
             {
-              label: 'Medical Research',
+              label: "Medical Research",
             },
             {
-              label: 'Public Health Research',
+              label: "Public Health Research",
             },
           ],
         },
         {
-          label: 'Major Grants',
+          label: "Major Grants",
         },
         {
-          label: 'Sub-Funds',
+          label: "Sub-Funds",
         },
       ],
       card: {
-        image: 'images/card-image.png',
-        title: 'Card Title',
-        desc: 'This round is for Major grants and program areas by invitation only.',
-        button: 'Find out more',
+        image: "images/card-image.png",
+        title: "Card Title",
+        desc: "This round is for Major grants and program areas by invitation only.",
+        button: "Find out more",
       },
     },
     {
-      label: 'Can We Apply',
+      label: "Can We Apply",
     },
     {
-      label: 'Grantees',
+      label: "Grantees",
     },
     {
-      label: 'Knowledge Center',
+      label: "Knowledge Center",
     },
     {
-      label: 'News',
+      label: "News",
     },
   ],
-}
+};
 </script>

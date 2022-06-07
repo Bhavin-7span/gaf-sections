@@ -65,7 +65,7 @@
 }
 // DESKTOP NAV
 .desktop-nav {
-  @apply flex items-stretch;
+  @apply flex items-stretch ;
   > li {
     @apply flex items-stretch;
     &:hover {

@@ -1,7 +1,6 @@
 <template comments>
   <div>
     <p class="nav-card__subtitle">{{ data.subtitle }}</p>
-
     <div class="nav-card">
       <img :src="data.image" alt="" />
       <h3 class="nav-card__title">{{ data.title }}</h3>
@@ -13,7 +12,6 @@
     </div>
   </div>
 </template>
-
 <script>
 export default {
   props: {

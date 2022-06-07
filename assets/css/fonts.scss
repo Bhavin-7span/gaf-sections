@@ -5,3 +5,13 @@
   src: url('/fonts/riformaLL-sub-medium.woff2') format('woff2'),
     url('/fonts/riformaLL-sub-medium.woff') format('woff');
 }
+@font-face {
+  font-family: 'Macklin Text';
+  src: url('/fonts/MacklinText-Regular.woff2') format('woff2'),
+      url('/fonts/MacklinText-Regular.woff') format('woff'),
+      url('/fonts/MacklinText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+

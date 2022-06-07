@@ -30,6 +30,7 @@ export default {
           ],
         },
       ],
+
       card: {
         subtitle: "Recent Post",
         title: "50th Anniversary Hoodie Competition",

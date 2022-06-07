@@ -1,0 +1,32 @@
+// .breadcrumb {
+//   @apply mt-6;
+// }
+
+
+
+.breadcrumbs {
+  @apply flex items-center;
+  > li {
+    @apply leading-tight mr-4 relative  ;
+    &:after{
+      
+     
+      @apply absolute top-auto bottom-1.5 text-g1-100  left-auto -right-3  text-b5  m-auto; 
+      content:'>';
+    }
+    &:last-child{
+      &:after{
+        @apply hidden;
+      }
+    }
+    &.current{
+      a{
+        @apply text-p2-500;
+      }
+   
+    }
+  }
+  a {
+    @apply font-body text-b4 font-normal text-g1-200  ;
+  }
+}

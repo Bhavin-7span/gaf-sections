@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Macklin Text';
+  src: url('/fonts/MacklinText-Regular.woff2') format('woff2'),
+      url('/fonts/MacklinText-Regular.woff') format('woff'),
+      url('/fonts/MacklinText-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 @import './button.scss';
 .container {
@@ -15,31 +25,14 @@ html {
   }
 }
 
-.section-header {
-  @apply text-center max-w-4xl mx-auto space-y-3;
-  &__title {
-    @apply  text-black font-bold   ;
-  }
-  &__text {
-    @apply   space-y-4;
-  }
-  &--small {
-    @apply max-w-xl;
-  }
-  &--medium {
-    @apply max-w-2xl;
-  }
-  &--left {
-    @apply text-left ml-0;
-  }
-}
+
 
 .section-title {
-  @apply  text-black font-bold   ;
+  @apply  text-d5 text-p2-300 font-extrabold font-body  lg:text-d2 ;
 }
 
 .section-text {
-  @apply      font-normal space-y-4;
+  @apply mt-4 block text-p2-500 font-light text-b4 font-body lg:mt-0;
 }
 
 .section-content {

@@ -1,44 +1,28 @@
-
-$(document).ready(function () {
-
 /**
  * Mobile Navigation
  */
-  document.addEventListener('DOMContentLoaded', () => {
-    const menu = new MmenuLight(document.querySelector('#mobile-nav'))
-    const navigator = menu.navigation({ theme: 'GAF' })
-    const drawer = menu.offcanvas({
-      position: 'right',
-      top: '96px',
+ document.addEventListener('DOMContentLoaded', () => {
+  const menu = new MmenuLight(document.querySelector('#mobile-nav'))
+  const navigator = menu.navigation({ theme: 'ipf' })
+  const drawer = menu.offcanvas({
+    position: 'right',
+    top: '96px',
+  })
+  document
+    .querySelector('.mobile-nav-opener')
+    .addEventListener('click', (evnt) => {
+      evnt.preventDefault()
+      drawer.open()
     })
-  
-    document
-      .querySelector('.mobile-nav-opener')
-      .addEventListener('click', (evnt) => {
-        evnt.preventDefault()
-        drawer.open()
-      })
-  
-    document
-      .querySelector('.mobile-nav-closer')
-      .addEventListener('click', (evnt) => {
-        evnt.preventDefault()
-        drawer.close()
-      })
-  })
- 
-  /**
-   * Toggle
-   */
-  $('[data-toggle]').on('click', function () {
-    const container = $(this).parents('[data-toggle-container]')
-    const target = container.find('[data-toggle-target]')
-    target.slideToggle()
-    target.toggleClass('toggle-target--open')
-    $(this).toggleClass('toggle--open')
-    container.toggleClass('toggle-container--open')
-  })
+  document
+    .querySelector('.mobile-nav-closer')
+    .addEventListener('click', (evnt) => {
+      evnt.preventDefault()
+      drawer.close()
+    })
+})
 
+$(document).ready(function () {
   /**
    * Side Nav
    */
@@ -53,6 +37,7 @@ $(document).ready(function () {
     } else {
       $('.sidenav__content').fadeOut()
       $('.sidenav__item ' ).removeClass('sidenav__item--active')
+
       $(this).closest('li').find('.sidenav__content').fadeIn()
       $(this).addClass('sidenav__item--active') 
       $(this).closest('.sidenav').addClass('sidenav--active')
@@ -66,21 +51,6 @@ $(document).ready(function () {
     $('.sidenav').removeClass('sidenav--active')
   })
 
-  /**
-   * Our Vision Header Highlighter
-   */
-  $('[data-vision-links] a').hover(
-    function () {
-      const target = $(this).parent().data('vision-links')
-      const color = $(this).parents('.our-vision-card').data('color')
-      $(`[data-vision-label="${target}"]`).addClass(`text-${color}-500`)
-    },
-    function () {
-      $('[data-vision-label]').removeClass(function (index, css) {
-        return css.split(' ').find((className) => className.startsWith('text-'))
-      })
-    }
-  )
 
   /**
    * Sticky Header
@@ -155,36 +125,5 @@ $(document).ready(function () {
       $(this).addClass('accordion--open')
     }
   })
-
-  /**
-   * Read More Functionality
-   */
-  $('.expandable [data-expandable="open"]').on('click', function () {
-    const container = $(this).parents('.expandable')
-    container.toggleClass('expandable--open')
-    container.find('[data-expandable="close"]').show()
-    $(this).hide()
-  })
-
-  $('.expandable [data-expandable="close"]').on('click', function () {
-    const container = $(this).parents('.expandable')
-    container.removeClass('expandable--open')
-    container.find('[data-expandable="open"]').show()
-    $(this).hide()
-  })
-
-  /**
-   * Masnory Layout
-   */
-  $('#annual-report-grid').colcade({
-    columns: '.grid-item',
-    items: '.annual-card',
-  })
-
-  /**
-   * Filters
-   */
-  $('.filter-toggle').click(function () {
-    $('.filters').toggleClass('filters--active')
-  })
+ 
 })
