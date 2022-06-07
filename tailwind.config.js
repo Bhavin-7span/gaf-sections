@@ -57,7 +57,7 @@ module.exports = {
     },
     fontSize: {
       //[fontSize,lineHeight]
-      d1: [pxToRem(100), { letterSpacing: '-6px', lineHeight: pxToRem(80) }],
+      d1: [pxToRem(100), { letterSpacing: '-3px', lineHeight: pxToRem(80) }],
       d2: [pxToRem(72), { letterSpacing: '-3px', lineHeight: pxToRem(72) }],
       d3: [pxToRem(64), { letterSpacing: '-1px', lineHeight: pxToRem(64) }],
       d4: [pxToRem(48), { letterSpacing: 'initial', lineHeight: pxToRem(52) }],

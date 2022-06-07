@@ -3,7 +3,10 @@
     <div class="container">
       <div class="header-standard">
         <div class="lg:w-1/2">
-          <Breadcrumbs v-if="breadcrumbs"></Breadcrumbs>
+          <Breadcrumbs
+            v-if="breadcrumbs"
+            
+          ></Breadcrumbs>
           <p class="title-small">
             {{ titleText }}
           </p>
@@ -11,8 +14,9 @@
             {{ title }}
           </h2>
         </div>
-        <div v-if="text">
+        <div v-if="text || bold" class="flex items-baseline">
           <span class="section-text">{{ text }} </span>
+          <b class="text-300 font-bold">{{ bold }} </b>
         </div>
 
         <div class="tab" v-if="tabNavigation">
@@ -54,6 +58,7 @@
 <script>
 export default {
   props: {
+    bold: String,
     breadcrumbs: Boolean,
     classHeader: String,
     titleText: String,

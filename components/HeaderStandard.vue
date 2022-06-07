@@ -11,12 +11,17 @@
       text="The George Alexander Foundation partners with selected institutions, primarily tertiary and other educational institutions, to offer scholarship and fellowship programs."
     />
     <TheHeaderStandard
-      breadcrumbs="true"
+      class="standardHeader-alt"
+      titleText="Home"
+      title="Search Result"
+      text="162 results found for  "
+      bold=" 'George'"
+    />
+    <TheHeaderStandard
+      breadcrumbs
       class="standardHeader-alt"
       titleText="Privacy Policy"
       title="Privacy Policy"
-      text="162 results found for "
-      bold="'George'"
     />
   </div>
 </template>

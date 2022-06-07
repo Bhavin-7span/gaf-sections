@@ -1,41 +1,59 @@
+
 $(document).ready(function () {
+  // $(".hero__video-wrap").on("click", function () {
+  //   $(this).toggleClass("player");
+  // })
+
+  // $(function() { 
+  //   var videos  = $(".hero__video-wrap");
+  
+  //       videos.on("click", function(){
+  //           var elm = $(this);              
+  
+  //           elm.addClass("player");
+  //           elm.off("click");
+  //       });
+  // });
+
   /**
    * Mobile Navigation
    */
-  document.addEventListener("DOMContentLoaded", () => {
-    const menu = new MmenuLight(document.querySelector("#mobile-nav"));
-    const navigator = menu.navigation({ theme: "GAF" });
-    const drawer = menu.offcanvas({
-      position: "right",
-      top: "96px",
-    });
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   const menu = new MmenuLight(document.querySelector("#mobile-nav"));
+  //   const navigator = menu.navigation({ theme: "GAF" });
+  //   const drawer = menu.offcanvas({
+  //     position: "right",
+  //     top: "96px",
+  //   });
 
-    document
-      .querySelector(".mobile-nav-opener")
-      .addEventListener("click", (evnt) => {
-        evnt.preventDefault();
-        drawer.open();
-      });
+  //   document
+  //     .querySelector(".mobile-nav-opener")
+  //     .addEventListener("click", (evnt) => {
+  //       evnt.preventDefault();
+  //       drawer.open();
+  //     });
 
-    document
-      .querySelector(".mobile-nav-closer")
-      .addEventListener("click", (evnt) => {
-        evnt.preventDefault();
-        drawer.close();
-      });
-  });
+  //   document
+  //     .querySelector(".mobile-nav-closer")
+  //     .addEventListener("click", (evnt) => {
+  //       evnt.preventDefault();
+  //       drawer.close();
+  //     });
+  // });
 
   /**
    * Toggle
    */
-  $("[data-toggle]").on("click", function () {
-    const container = $(this).parents("[data-toggle-container]");
-    const target = container.find("[data-toggle-target]");
-    target.slideToggle();
-    target.toggleClass("toggle-target--open");
-    $(this).toggleClass("toggle--open");
-    container.toggleClass("toggle-container--open");
-  });
+  // $("[data-toggle]").on("click", function () {
+  //   const container = $(this).parents("[data-toggle-container]");
+  //   const target = container.find("[data-toggle-target]");
+  //   target.slideToggle();
+  //   target.toggleClass("toggle-target--open");
+  //   $(this).toggleClass("toggle--open");
+  //   container.toggleClass("toggle-container--open");
+  // });
+
+});
 
 $(document).ready(function () {
   /**
@@ -63,24 +81,6 @@ $(document).ready(function () {
     $(".sidenav__item span").removeClass("sidenav__item--active");
     $(".sidenav").removeClass("sidenav--active");
   });
-
-  /**
-   * Our Vision Header Highlighter
-   */
-  $("[data-vision-links] a").hover(
-    function () {
-      const target = $(this).parent().data("vision-links");
-      const color = $(this).parents(".our-vision-card").data("color");
-      $(`[data-vision-label="${target}"]`).addClass(`text-${color}-500`);
-    },
-    function () {
-      $("[data-vision-label]").removeClass(function (index, css) {
-        return css
-          .split(" ")
-          .find((className) => className.startsWith("text-"));
-      });
-    }
-  );
 
   /**
    * Sticky Header
@@ -156,35 +156,38 @@ $(document).ready(function () {
     }
   });
 
-  /**
-   * Read More Functionality
-   */
-  $('.expandable [data-expandable="open"]').on("click", function () {
-    const container = $(this).parents(".expandable");
-    container.toggleClass("expandable--open");
-    container.find('[data-expandable="close"]').show();
-    $(this).hide();
-  });
 
-  $('.expandable [data-expandable="close"]').on("click", function () {
-    const container = $(this).parents(".expandable");
-    container.removeClass("expandable--open");
-    container.find('[data-expandable="open"]').show();
-    $(this).hide();
-  });
 
-  /**
-   * Masnory Layout
-   */
-  $("#annual-report-grid").colcade({
-    columns: ".grid-item",
-    items: ".annual-card",
-  });
-
-  /**
-   * Filters
-   */
-  $(".filter-toggle").click(function () {
-    $(".filters").toggleClass("filters--active");
-  });
 });
+
+
+/*************7th jun2022  video poster iFrame ********/
+
+
+$(document).ready(function (e)  {
+    e.stopPropagation();
+    // var videos = $(".hero__video-wrap");
+
+    // videos.on("click", function () {
+    //   var elm = $(this),
+    //     conts = elm.contents(),
+    //     le = conts.length,
+    //     ifr = null;
+
+    //   for (var i = 0; i < le; i++) {
+    //     if (conts[i].nodeType == 8) ifr = conts[i].textContent;
+    //   }
+
+    //   elm.addClass("player").html(ifr);
+    //   elm.off("click");
+    // });
+
+
+  $(".hero__video-wrap").on("click", function () {
+    $(this).toggleClass("player");
+  });
+  });
+
+
+
+

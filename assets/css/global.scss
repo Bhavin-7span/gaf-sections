@@ -28,11 +28,15 @@ html {
 
 
 .section-title {
-  @apply  text-d5 text-p2-300 font-extrabold font-body  lg:text-d2 ;
+  @apply  text-d5 text-p2-300 font-extrabold font-body my-2 lg:text-d2 ;
 }
 
 .section-text {
   @apply mt-4 block text-p2-500 font-light text-b4 font-body lg:mt-0;
+
+  &__green{
+    @apply text-p1-700 ;
+  }
 }
 
 .section-content {

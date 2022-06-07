@@ -8,9 +8,9 @@
 }
 .standardHeader-alt{
     .header-standard{
-        @apply lg:flex-col  lg:justify-center text-center;
+        @apply lg:flex-col  lg:justify-center lg:text-center;
         .breadcrumbs{
-            @apply justify-center flex;
+            @apply lg:justify-center lg:flex;
             width:100%; 
         }
         .title-small{
