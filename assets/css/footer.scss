@@ -54,6 +54,9 @@
   @apply flex justify-center text-p2-300;
   li {
     @apply px-2;
+    a{
+      @apply text-b5;
+    }
     &+li{
       @apply border-l border-p2-300 lg:border-none;
     }

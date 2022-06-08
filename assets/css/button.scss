@@ -101,6 +101,20 @@
   &.button--muted {
     @apply bg-p2-300 ;
     @apply hover:bg-p2-500;
+  }}
+.button--s1 {
+  &.button--solid {
+    @apply bg-p1-700 text-p1-500  ; 
+    @apply hover:text-p1-700 hover:bg-p1-500;
+  }
+
+  &.button--outline {
+    @apply border-2 border-p1-500 ;
+    @apply hover:bg-p1-500 hover:text-white;
+  }
+
+  &.button--link {
+    @apply text-p1-500;
   }
 }
 

@@ -1,30 +1,38 @@
 $(document).ready(function () {
+  // $(".hero__video-wrap").on("click", function () {
+  //   $(this).toggleClass("player");
+  // })
+  // $(function() {
+  //   var videos  = $(".hero__video-wrap");
+  //       videos.on("click", function(){
+  //           var elm = $(this);
+  //           elm.addClass("player");
+  //           elm.off("click");
+  //       });
+  // });
   /**
    * Mobile Navigation
    */
-  document.addEventListener("DOMContentLoaded", () => {
-    const menu = new MmenuLight(document.querySelector("#mobile-nav"));
-    const navigator = menu.navigation({ theme: "GAF" });
-    const drawer = menu.offcanvas({
-      position: "right",
-      top: "96px",
-    });
-
-    document
-      .querySelector(".mobile-nav-opener")
-      .addEventListener("click", (evnt) => {
-        evnt.preventDefault();
-        drawer.open();
-      });
-
-    document
-      .querySelector(".mobile-nav-closer")
-      .addEventListener("click", (evnt) => {
-        evnt.preventDefault();
-        drawer.close();
-      });
-  });
-
+  // document.addEventListener("DOMContentLoaded", () => {
+  //   const menu = new MmenuLight(document.querySelector("#mobile-nav"));
+  //   const navigator = menu.navigation({ theme: "GAF" });
+  //   const drawer = menu.offcanvas({
+  //     position: "right",
+  //     top: "96px",
+  //   });
+  //   document
+  //     .querySelector(".mobile-nav-opener")
+  //     .addEventListener("click", (evnt) => {
+  //       evnt.preventDefault();
+  //       drawer.open();
+  //     });
+  //   document
+  //     .querySelector(".mobile-nav-closer")
+  //     .addEventListener("click", (evnt) => {
+  //       evnt.preventDefault();
+  //       drawer.close();
+  //     });
+  // });
   /**
    * Toggle
    */
@@ -36,6 +44,36 @@ $(document).ready(function () {
     $(this).toggleClass("toggle--open");
     container.toggleClass("toggle-container--open");
   });
+});
+
+$(document).ready(function () {
+  /**
+   * Side Nav
+   */
+
+  /* $(".sidenav__item ").on("click", function () {
+    const isActive = $(this).hasClass("sidenav__item--active");
+
+    if (isActive) {
+      $(this).closest("li").find(".sidenav__content").fadeOut();
+      $(this).removeClass("sidenav__item--active");
+      $(this).closest(".sidenav").removeClass("sidenav--active");
+    } else {
+      $(".sidenav__content").fadeOut();
+      $(".sidenav__item ").removeClass("sidenav__item--active");
+      $(this).closest("li").find(".sidenav__content").fadeIn();
+      $(this).addClass("sidenav__item--active");
+      $(this).closest(".sidenav").addClass("sidenav--active");
+    }
+  });
+
+  $(".sidenav__close").on("click", function () {
+    $(".sidenav__content").fadeOut();
+    $(".sidenav__item span").removeClass("sidenav__item--active");
+    $(".sidenav").removeClass("sidenav--active");
+  });
+
+  */
 
   /**
    * Sticky Header
@@ -109,5 +147,30 @@ $(document).ready(function () {
       $(this).find(".accordion__content").slideDown();
       $(this).addClass("accordion--open");
     }
+  });
+});
+
+/*************7th jun2022  video poster iFrame ********/
+
+$(document).ready(function (e) {
+  e.stopPropagation();
+  // var videos = $(".hero__video-wrap");
+
+  // videos.on("click", function () {
+  //   var elm = $(this),
+  //     conts = elm.contents(),
+  //     le = conts.length,
+  //     ifr = null;
+
+  //   for (var i = 0; i < le; i++) {
+  //     if (conts[i].nodeType == 8) ifr = conts[i].textContent;
+  //   }
+
+  //   elm.addClass("player").html(ifr);
+  //   elm.off("click");
+  // });
+
+  $(".hero__video-wrap").on("click", function () {
+    $(this).toggleClass("player");
   });
 });

@@ -37,7 +37,10 @@ module.exports = {
         // '2xl': '',
       },
     },
-    fontFamily: {},
+    fontFamily: {
+      //display: ["Macklin Text", ...defaultTheme.fontFamily.sans],
+      body: ["LL Riforma", ...defaultTheme.fontFamily.sans],
+    },
     borderRadius: {
       none: "0",
       sm: "0.125rem",
@@ -71,34 +74,42 @@ module.exports = {
         500: "#7FE27B",
       },
       p2: {
-        900: "#302e2a",
         500: "#676784",
         300: "#443F3F",
+        900: "#302e2a",
       },
 
+      g1: {
+        100: "#7FE27B",
+        200: "#1C4953",
+        300: "#9c9c9c",
+      },
       white: "#ffffff",
       black: "#000000",
       transparent: "transparent",
+      900: "#302e2a",
+      500: "#676784",
+      300: "#443F3F",
     },
-    extend: {
-      screens: {
-        "3xl": "2560px",
-        "4xl": "3840px",
-      },
-      width: extendedColumnWidths(),
-      margin: gridOffsets(),
-      borderRadius: {
-        xl: "0.75rem",
-        "2xl": "1rem",
-        "3xl": "1.25rem",
-      },
-      lineClamp: {
-        8: "8",
-        10: "10",
-        12: "12",
-        14: "14",
-        16: "16",
-      },
+  },
+  extend: {
+    screens: {
+      "3xl": "2560px",
+      "4xl": "3840px",
+    },
+    width: extendedColumnWidths(),
+    margin: gridOffsets(),
+    borderRadius: {
+      xl: "0.75rem",
+      "2xl": "1rem",
+      "3xl": "1.25rem",
+    },
+    lineClamp: {
+      8: "8",
+      10: "10",
+      12: "12",
+      14: "14",
+      16: "16",
     },
   },
 

@@ -11,7 +11,7 @@
             <a href="javascript:;" class="block">
               <img class="w-36 inline" src="/images/logo-white.svg" alt="" />
             </a>
-            <p class="section-text font-light text-white mt-6 mb-3 lg:flex">
+            <p class="font-light text-white text-b5 mt-6 mb-3 lg:flex">
               <img
                 class="mx-auto h-4 w-4 lg:mr-3 lg:ml-0 lg:mt-1"
                 src="/icons/location-green.svg"
@@ -22,7 +22,7 @@
             </p>
             <a
               href="tel:+61396503188"
-              class="text-b4 font-light text-white mt-2 block lg:flex lg:m-0"
+              class="text-b5 font-light text-white mt-2 block lg:flex lg:m-0"
             >
               <img
                 class="mx-auto h-4 w-4 lg:mr-3 lg:ml-0 lg:mt-1"
@@ -87,7 +87,7 @@
         </div>
       </div>
     </div>
-    <!-- Center Footer -->
+    <!-- Footer Center-->
     <div
       class="footer__center border-t border-p1-500 py-6 text-center lg:text-left"
     >
@@ -98,9 +98,7 @@
             <li><a href="javascript:;">Sitemap</a></li>
           </ul>
 
-          <div
-            class="section-text font-normal text-b5 text-p2-300 mt-4 lg:mt-0"
-          >
+          <div class="text-b5 font-normal text-p2-300 mt-4 lg:mt-0">
             © 2022 The George Alexander Foundation. All rights reserved.
             <span class="block mt-3 lg:mt-0 lg:inline-block">
               Crafted by Soul+Wolf
@@ -119,7 +117,7 @@
       </div>
     </div>
 
-    <!-- Footer Bottom:2 -->
+    <!-- Footer Bottom -->
     <div class="footer__bottom bg-p2-900 py-8">
       <div class="container">
         <div class="lg:flex lg:items-center lg:justify-center">
@@ -129,7 +127,7 @@
           </div>
 
           <p
-            class="section-text text-white text-center text-b5 mt-6 lg:mt-0 lg:text-left lg:px-6"
+            class="text-g1-300 text-center text-b5 mt-6 lg:mt-0 lg:text-left lg:px-6"
           >
             We acknowledge the Traditional Custodians of the land on which we
             work. We pay our respects to their Elders past and present.

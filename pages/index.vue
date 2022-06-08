@@ -8,6 +8,12 @@
     <TheHeaderMobile />
     <!-- Header:Mobile : Ends-->
 
+    <HeaderStandard />
+
+    <!-- Header home page Start -->
+    <HomePage />
+    <!-- Header home page End -->
+
     <!-- Footer : Starts -->
     <TheFooter />
     <!-- Footer : Ends -->

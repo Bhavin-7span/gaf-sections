@@ -1,0 +1,21 @@
+@font-face {
+  font-family: 'LL Riforma';
+  font-weight: 300;
+  font-display: swap;
+  src: url('/fonts/RiformaLLSub-Light.woff2') format('woff2'),
+    url('/fonts/RiformaLLSub-Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'LL Riforma';
+  font-weight: 400;
+  font-display: swap;
+  src: url('/fonts/RiformaLLSub-Regul.woff2') format('woff2'),
+    url('/fonts/RiformaLLSub-Redium.woff') format('woff');
+}
+@font-face {
+  font-family: 'LL Riforma';
+  font-weight: 500;
+  font-display: swap;
+  src: url('/fonts/RiformaLLSub-Medium.woff2') format('woff2'),
+    url('/fonts/RiformaLLSub-Medium.woff') format('woff');
+}
