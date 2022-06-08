@@ -152,8 +152,8 @@ $(document).ready(function () {
 
 /*************7th jun2022  video poster iFrame ********/
 
-$(document).ready(function (e) {
-  e.stopPropagation();
+$(document).ready(function () {
+  //e.stopPropagation();
   // var videos = $(".hero__video-wrap");
 
   // videos.on("click", function () {

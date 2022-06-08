@@ -14,6 +14,18 @@
     <HomePage />
     <!-- Header home page End -->
 
+    <!-- Our Programs : Starts -->
+    <OurPrograms />
+    <!-- Our Programs : Ends -->
+
+    <!-- Our Community : Starts -->
+    <OurCommunity />
+    <!-- Our Community : Ends -->
+
+    <!-- Subscribe : Starts -->
+    <Subscribe />
+    <!-- Subscribe : Ends -->
+
     <!-- Footer : Starts -->
     <TheFooter />
     <!-- Footer : Ends -->

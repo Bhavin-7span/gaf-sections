@@ -1,0 +1,25 @@
+.section-subscribe{
+  background-image: url(/images/bg-cta.jpg);
+  @apply bg-no-repeat bg-cover py-16;
+  button{
+    box-shadow: -1px 6px 15px rgba(42, 54, 88, 0.3);
+  }
+}
+label{
+  @apply text-p2-300;
+}
+input,
+select{
+  @apply bg-white px-5 text-p2-300 border border-p1-500 h-14 w-full rounded-lg;
+  @apply focus:outline-none placeholder-p2-300 mt-2;
+  box-shadow: -1px 6px 15px rgba(42, 54, 88, 0.3);
+}
+select{
+  background-image: url(/icons/chevron-down.svg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: 25px 50px;
+  background-position: 96% 50%;
+  padding-right: 40px;
+  -webkit-appearance: none;
+}
