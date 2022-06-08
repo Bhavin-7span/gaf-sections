@@ -1,20 +1,48 @@
+$(window).on('load', function () {
+  const sliders = [
+    {
+      target: $('#event-slider'),
+      config: {
+        mobileFirst: true,
+        slidesToShow: 1,
+        arrows: false,
+        slidesToScroll: 1,
+        dots: true,
+        appendDots: $('#event-slider-dots'),
+        responsive: [
+          {
+            breakpoint: 1024,
+          },
+        ],
+      },
+      instance: null,
+    },
+  ]
 
-//$(document).ready(function () {
+  sliders.forEach(function (slider) {
+    slider.instance = slider.target.slick(slider.config)
+    $(window).on('resize', function () {
+      if (!slider.instance.hasClass('slick-initialized')) {
+        slider.target.slick(slider.config)
+      }
+    })
+  })
+})
+
+
+
+$(document).ready(function () {
   // $(".hero__video-wrap").on("click", function () {
   //   $(this).toggleClass("player");
   // })
-
-  // $(function() { 
+  // $(function() {
   //   var videos  = $(".hero__video-wrap");
-  
   //       videos.on("click", function(){
-  //           var elm = $(this);              
-  
+  //           var elm = $(this);
   //           elm.addClass("player");
   //           elm.off("click");
   //       });
   // });
-
   /**
    * Mobile Navigation
    */
@@ -25,14 +53,12 @@
   //     position: "right",
   //     top: "96px",
   //   });
-
   //   document
   //     .querySelector(".mobile-nav-opener")
   //     .addEventListener("click", (evnt) => {
   //       evnt.preventDefault();
   //       drawer.open();
   //     });
-
   //   document
   //     .querySelector(".mobile-nav-closer")
   //     .addEventListener("click", (evnt) => {
@@ -40,47 +66,47 @@
   //       drawer.close();
   //     });
   // });
-
   /**
    * Toggle
    */
-  // $("[data-toggle]").on("click", function () {
-  //   const container = $(this).parents("[data-toggle-container]");
-  //   const target = container.find("[data-toggle-target]");
-  //   target.slideToggle();
-  //   target.toggleClass("toggle-target--open");
-  //   $(this).toggleClass("toggle--open");
-  //   container.toggleClass("toggle-container--open");
-  // });
-
-//});
+  $("[data-toggle]").on("click", function () {
+    const container = $(this).parents("[data-toggle-container]");
+    const target = container.find("[data-toggle-target]");
+    target.slideToggle();
+    target.toggleClass("toggle-target--open");
+    $(this).toggleClass("toggle--open");
+    container.toggleClass("toggle-container--open");
+  });
+});
 
 //$(document).ready(function () {
   /**
    * Side Nav
    */
 
-  // $(".sidenav__item ").on("click", function () {
-  //   const isActive = $(this).hasClass("sidenav__item--active");
+  /* $(".sidenav__item ").on("click", function () {
+    const isActive = $(this).hasClass("sidenav__item--active");
 
-  //   if (isActive) {
-  //     $(this).closest("li").find(".sidenav__content").fadeOut();
-  //     $(this).removeClass("sidenav__item--active");
-  //     $(this).closest(".sidenav").removeClass("sidenav--active");
-  //   } else {
-  //     $(".sidenav__content").fadeOut();
-  //     $(".sidenav__item ").removeClass("sidenav__item--active");
-  //     $(this).closest("li").find(".sidenav__content").fadeIn();
-  //     $(this).addClass("sidenav__item--active");
-  //     $(this).closest(".sidenav").addClass("sidenav--active");
-  //   }
-  // });
+    if (isActive) {
+      $(this).closest("li").find(".sidenav__content").fadeOut();
+      $(this).removeClass("sidenav__item--active");
+      $(this).closest(".sidenav").removeClass("sidenav--active");
+    } else {
+      $(".sidenav__content").fadeOut();
+      $(".sidenav__item ").removeClass("sidenav__item--active");
+      $(this).closest("li").find(".sidenav__content").fadeIn();
+      $(this).addClass("sidenav__item--active");
+      $(this).closest(".sidenav").addClass("sidenav--active");
+    }
+  });
 
   // $(".sidenav__close").on("click", function () {
   //   $(".sidenav__content").fadeOut();
   //   $(".sidenav__item span").removeClass("sidenav__item--active");
   //   $(".sidenav").removeClass("sidenav--active");
   // });
+
+  */
 
   /**
    * Sticky Header
@@ -145,79 +171,40 @@
   /**
    * Accordion
    */
-  // $(".accordion").on("click", function () {
-  //   const isThisOpen = $(this).hasClass("accordion--open");
-  //   $(".accordion").removeClass("accordion--open");
-  //   $(".accordion__content").slideUp();
+  $(".accordion").on("click", function () {
+    const isThisOpen = $(this).hasClass("accordion--open");
+    $(".accordion").removeClass("accordion--open");
+    $(".accordion__content").slideUp();
 
-  //   if (!isThisOpen) {
-  //     $(this).find(".accordion__content").slideDown();
-  //     $(this).addClass("accordion--open");
-  //   }
-  // });
-
-
-
-//});
+    if (!isThisOpen) {
+      $(this).find(".accordion__content").slideDown();
+      $(this).addClass("accordion--open");
+    }
+  });
 
 
 /*************7th jun2022  video poster iFrame ********/
 
+$(document).ready(function (e) {
+  e.stopPropagation();
+  // var videos = $(".hero__video-wrap");
 
-$(document).ready(function ()  {
- 
-    // var videos = $(".hero__video-wrap");
+  // videos.on("click", function () {
+  //   var elm = $(this),
+  //     conts = elm.contents(),
+  //     le = conts.length,
+  //     ifr = null;
 
-    // videos.on("click", function () {
-    //   var elm = $(this),
-    //     conts = elm.contents(),
-    //     le = conts.length,
-    //     ifr = document.getElementsByTagName("iframe") ;
+  //   for (var i = 0; i < le; i++) {
+  //     if (conts[i].nodeType == 8) ifr = conts[i].textContent;
+  //   }
 
-    //   for (var i = 0; i < le; i++) {
-    //     if (conts[i].nodeType == 8) ifr = conts[i].textContent;
-    //   }
-
-    //   elm.addClass("player").html(ifr);
-    //   elm.off("click");
-    // });
-
+  //   elm.addClass("player").html(ifr);
+  //   elm.off("click");
+  // });
 
   $(".hero__video-wrap").on("click", function () {
     
     $(this).toggleClass("player");
   });
-  });
-
-  $(window).on('load', function () {
-    const sliders = [
-      {
-        target: $('#event-slider'),
-        config: {
-          mobileFirst: true,
-          slidesToShow: 1,
-          arrows: true,
-          nav:true,
-          slidesToScroll: 1,
-          dots: false,
-          appendDots: $('#event-slider-dots'),
-          responsive: [
-            {
-              breakpoint: 1024,
-            },
-          ],
-        },
-        instance: null,
-      },     
-    ]  
-    sliders.forEach(function (slider) {
-      slider.instance = slider.target.slick(slider.config)
-      $(window).on('resize', function () {
-        if (!slider.instance.hasClass('slick-initialized')) {
-          slider.target.slick(slider.config)
-        }
-      })
-    })
-  })
-
-
+});
