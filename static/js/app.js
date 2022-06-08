@@ -38,50 +38,6 @@ $(document).ready(function () {
   });
 
   /**
-   * Side Nav
-   */
-
-  $(".sidenav__item ").on("click", function () {
-    const isActive = $(this).hasClass("sidenav__item--active");
-
-    if (isActive) {
-      $(this).closest("li").find(".sidenav__content").fadeOut();
-      $(this).removeClass("sidenav__item--active");
-      $(this).closest(".sidenav").removeClass("sidenav--active");
-    } else {
-      $(".sidenav__content").fadeOut();
-      $(".sidenav__item ").removeClass("sidenav__item--active");
-      $(this).closest("li").find(".sidenav__content").fadeIn();
-      $(this).addClass("sidenav__item--active");
-      $(this).closest(".sidenav").addClass("sidenav--active");
-    }
-  });
-
-  $(".sidenav__close").on("click", function () {
-    $(".sidenav__content").fadeOut();
-    $(".sidenav__item span").removeClass("sidenav__item--active");
-    $(".sidenav").removeClass("sidenav--active");
-  });
-
-  /**
-   * Our Vision Header Highlighter
-   */
-  $("[data-vision-links] a").hover(
-    function () {
-      const target = $(this).parent().data("vision-links");
-      const color = $(this).parents(".our-vision-card").data("color");
-      $(`[data-vision-label="${target}"]`).addClass(`text-${color}-500`);
-    },
-    function () {
-      $("[data-vision-label]").removeClass(function (index, css) {
-        return css
-          .split(" ")
-          .find((className) => className.startsWith("text-"));
-      });
-    }
-  );
-
-  /**
    * Sticky Header
    */
   const body = document.body;
@@ -153,37 +109,5 @@ $(document).ready(function () {
       $(this).find(".accordion__content").slideDown();
       $(this).addClass("accordion--open");
     }
-  });
-
-  /**
-   * Read More Functionality
-   */
-  $('.expandable [data-expandable="open"]').on("click", function () {
-    const container = $(this).parents(".expandable");
-    container.toggleClass("expandable--open");
-    container.find('[data-expandable="close"]').show();
-    $(this).hide();
-  });
-
-  $('.expandable [data-expandable="close"]').on("click", function () {
-    const container = $(this).parents(".expandable");
-    container.removeClass("expandable--open");
-    container.find('[data-expandable="open"]').show();
-    $(this).hide();
-  });
-
-  /**
-   * Masnory Layout
-   */
-  $("#annual-report-grid").colcade({
-    columns: ".grid-item",
-    items: ".annual-card",
-  });
-
-  /**
-   * Filters
-   */
-  $(".filter-toggle").click(function () {
-    $(".filters").toggleClass("filters--active");
   });
 });

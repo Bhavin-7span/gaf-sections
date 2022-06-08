@@ -1,6 +1,8 @@
 .button {
-  @apply inline-flex items-center justify-center rounded whitespace-nowrap;
-
+  @apply text-b5 font-normal inline-flex items-center justify-center rounded whitespace-nowrap;
+  img {
+      @apply w-3;
+    }
   &:hover {
     .button__arrow {
       &:after,
@@ -11,7 +13,7 @@
   }
 
   .button__icon {
-    @apply mr-2 h-5;
+    @apply mr-2 w-3;
   }
 }
 
@@ -78,6 +80,23 @@
   }
 }
 
+.button--p1-dark{
+  &.button--solid {
+    @apply bg-p1-500 text-p1-700 border border-p1-700;
+    @apply hover:bg-p1-700 hover:text-p1-500 hover:border-p1-500;
+  }
+  
+  &.button--outline {
+    @apply border border-p1-500 text-p1-500;
+    @apply hover:bg-p1-500 hover:text-white;
+  }
+}
+.button--p1-dark:hover{
+  img{
+    filter: grayscale(1) brightness(8.5);
+  }
+}
+
 .button--p2 {
   &.button--muted {
     @apply bg-p2-300 ;
@@ -130,5 +149,5 @@
 }
 
 .button-link__icon {
-  @apply h-5 mr-2;
+  @apply w-3 mr-2;
 }

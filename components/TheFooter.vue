@@ -1,34 +1,57 @@
 <template comments>
-  <section class="footer">
+  <section class="footer relative">
     <!-- Footer Top -->
-    <div class="md:grid md:grid-cols-2 md:gap-10 lg:grid-cols-3">
-      <div
-        class="footer__left bg-p1-700 py-16 text-center lg:text-left lg:col-span-1"
-      >
-        <div class="container">
-          <!-- Logo -->
-          <a href="javascript:;" class="block">
-            <img class="w-36 inline" src="/images/logo-white.svg" alt="" />
-          </a>
-          <p class="section-text text-white mt-6">
-            Level 3, 111 Collins Street Melbourne VIC 3000 Australia
-          </p>
-          <a href="tel:+61396503188" class="text-b3 text-white mt-2 block">
-            +61 3 96503188
-          </a>
-          <Btn
-            class="mt-3"
-            label="Login"
-            color="p1"
-            theme="outline"
-            size="md"
-          />
-          <Btn class="mt-3" label="Donate" color="p1" theme="solid" size="md" />
+    <div class="footer__top relative">
+      <div class="md:grid md:grid-cols-2 md:gap-10 lg:grid-cols-3">
+        <div
+          class="footer__left bg-p1-700 py-16 text-center lg:text-left lg:col-span-1"
+        >
+          <div class="footer__left-content relative z-10 container">
+            <!-- Logo -->
+            <a href="javascript:;" class="block">
+              <img class="w-36 inline" src="/images/logo-white.svg" alt="" />
+            </a>
+            <p class="section-text font-light text-white mt-6 mb-3 lg:flex">
+              <img
+                class="mx-auto h-4 w-4 lg:mr-3 lg:ml-0 lg:mt-1"
+                src="/icons/location-green.svg"
+                alt="location"
+              />
+              Level 3, 111 Collins Street <br />
+              Melbourne VIC 3000 <br />Australia
+            </p>
+            <a
+              href="tel:+61396503188"
+              class="text-b4 font-light text-white mt-2 block lg:flex lg:m-0"
+            >
+              <img
+                class="mx-auto h-4 w-4 lg:mr-3 lg:ml-0 lg:mt-1"
+                src="/icons/phone-green.svg"
+                alt="phone"
+              />
+              +61 3 96503188
+            </a>
+            <Btn
+              class="mt-6"
+              label="Login"
+              color="p1-dark"
+              theme="outline"
+              size="md"
+              icon="/icons/user-green.svg"
+            />
+            <Btn
+              class="mt-6"
+              label="Donate"
+              color="p1-dark"
+              theme="solid"
+              size="md"
+            />
+          </div>
         </div>
-      </div>
-      <div class="footer__right py-16 lg:col-span-2">
-        <div class="container">
-          <div class="lg:grid lg:gap-6 lg:grid-cols-4">
+        <div class="footer__right py-12 lg:py-16 lg:col-span-2">
+          <div
+            class="footer__right-content container lg:grid lg:gap-6 lg:grid-cols-4"
+          >
             <!-- Col 1 -->
             <div class="mt-8 lg:mt-0">
               <FooterLinks
@@ -64,8 +87,10 @@
         </div>
       </div>
     </div>
-    <!-- Bottom Footer -->
-    <div class="border-t border-p1-500 py-6 text-center lg:text-left">
+    <!-- Center Footer -->
+    <div
+      class="footer__center border-t border-p1-500 py-6 text-center lg:text-left"
+    >
       <div class="container">
         <div class="lg:flex lg:justify-between lg:items-center">
           <ul class="footer__imp-links">
@@ -73,8 +98,13 @@
             <li><a href="javascript:;">Sitemap</a></li>
           </ul>
 
-          <div class="section-text mt-4 lg:mt-0">
+          <div
+            class="section-text font-normal text-b5 text-p2-300 mt-4 lg:mt-0"
+          >
             © 2022 The George Alexander Foundation. All rights reserved.
+            <span class="block mt-3 lg:mt-0 lg:inline-block">
+              Crafted by Soul+Wolf
+            </span>
           </div>
 
           <div class="footer__social">
@@ -90,7 +120,7 @@
     </div>
 
     <!-- Footer Bottom:2 -->
-    <div class="bg-p2-900 py-8">
+    <div class="footer__bottom bg-p2-900 py-8">
       <div class="container">
         <div class="lg:flex lg:items-center lg:justify-center">
           <div class="flex justify-center space-x-2">

@@ -37,9 +37,7 @@ module.exports = {
         // '2xl': '',
       },
     },
-    fontFamily: {
-      display: ["RiformaLL", ...defaultTheme.fontFamily.sans],
-    },
+    fontFamily: {},
     borderRadius: {
       none: "0",
       sm: "0.125rem",
@@ -63,7 +61,7 @@ module.exports = {
       b1: [pxToRem(36), { letterSpacing: "initial", lineHeight: pxToRem(44) }],
       b2: [pxToRem(32), { letterSpacing: "initial", lineHeight: pxToRem(40) }],
       b3: [pxToRem(21), { letterSpacing: "initial", lineHeight: pxToRem(31) }],
-      b4: [pxToRem(17), { letterSpacing: "initial", lineHeight: pxToRem(25) }],
+      b4: [pxToRem(16), { letterSpacing: "initial", lineHeight: pxToRem(25) }],
       b5: [pxToRem(14), { letterSpacing: "initial" }],
     },
     colors: {
