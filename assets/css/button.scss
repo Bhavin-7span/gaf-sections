@@ -66,17 +66,21 @@
 
 .button--p1 {
   &.button--solid {
-    @apply bg-p1-500 text-white;
-    @apply hover:bg-p1-700;
+    @apply bg-p1-500 text-p1-700;
+    @apply hover:bg-p1-700 hover:text-p1-500;
   }
 
   &.button--outline {
     @apply border-2 border-p1-500 ;
-    @apply hover:bg-p1-500 hover:text-white;
+    @apply hover:bg-p1-500 hover:text-p1-700;
   }
 
   &.button--link {
-    @apply text-p1-500;
+    @apply text-p1-700;
+  }
+
+  .button__arrow{
+    @apply  text-p1-500  ;
   }
 }
 
@@ -116,14 +120,13 @@
 
   &.button--outline {
     @apply border-2 border-p1-500 ;
-    @apply hover:bg-p1-500 hover:text-white;
+    @apply hover:bg-p1-500 hover:text-p1-700;
   }
 
   &.button--link {
     @apply text-p1-500;
   }
 }
-
 
 .button--white {
   &.button--trn {
@@ -137,11 +140,10 @@
 }
 
 .button__arrow {
-  @apply h-0.5 w-9 relative;
+  @apply h-0.5 w-9 relative text-b3;
   background-color: currentColor;
   position: relative;
   margin-left: 12px;
-
   &:after {
     transition: transform 0.3s ease 0s;
     content: '';

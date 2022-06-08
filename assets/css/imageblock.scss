@@ -1,0 +1,47 @@
+.imageblock{
+   @apply relative;   
+    &__vertical{
+        @apply relative ;
+        padding-bottom: 130%;
+        @screen md{
+            @apply pb-0;
+        }
+        &:before{
+            @apply absolute top-0 left-0 right-0 bottom-0 w-full h-full;    
+            content:'';
+            background:linear-gradient(0deg, rgba(0, 74, 84, 0) 0%, rgba(28, 73, 83, 0.8) 0.01%, rgba(0, 74, 84, 0) 100%);
+            
+        }img{
+            @apply object-cover absolute top-0 right-0 left-0 bottom-0 h-full w-full  md:static;
+        }
+    }
+    &__horizontal{
+        @apply relative; padding-bottom: 130%;
+        @screen md{
+            @apply pb-0;
+        }
+        &:before{
+            @apply absolute top-0 left-0 right-0 bottom-0 w-full h-full;    
+            content:'';           
+            background: linear-gradient(270deg, rgba(28, 73, 83, 0.8) 0%, rgba(0, 74, 84, 0.4) 100%);
+        }
+        img{
+            @apply object-cover absolute top-0 right-0 left-0 bottom-0 h-full w-full  md:static;
+        }
+    }
+    &__medium{
+        @apply relative m-auto md:max-w-4xl ;
+         padding-bottom: 100%;
+         img{
+            @apply object-cover absolute top-0 right-0 left-0 bottom-0 h-full w-full  md:static;
+       
+         }
+        @screen md{
+            @apply pb-0;
+
+        }
+        &:after{
+         @apply absolute top-0 left-0 right-0 bottom-0 w-full h-full;   
+        }
+    }    
+}

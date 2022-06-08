@@ -1,3 +1,36 @@
+$(window).on('load', function () {
+  const sliders = [
+    {
+      target: $('#event-slider'),
+      config: {
+        mobileFirst: true,
+        slidesToShow: 1,
+        arrows: false,
+        slidesToScroll: 1,
+        dots: true,
+        appendDots: $('#event-slider-dots'),
+        responsive: [
+          {
+            breakpoint: 1024,
+          },
+        ],
+      },
+      instance: null,
+    },
+  ]
+
+  sliders.forEach(function (slider) {
+    slider.instance = slider.target.slick(slider.config)
+    $(window).on('resize', function () {
+      if (!slider.instance.hasClass('slick-initialized')) {
+        slider.target.slick(slider.config)
+      }
+    })
+  })
+})
+
+
+
 $(document).ready(function () {
   // $(".hero__video-wrap").on("click", function () {
   //   $(this).toggleClass("player");
@@ -46,7 +79,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
+//$(document).ready(function () {
   /**
    * Side Nav
    */
@@ -67,73 +100,73 @@ $(document).ready(function () {
     }
   });
 
-  $(".sidenav__close").on("click", function () {
-    $(".sidenav__content").fadeOut();
-    $(".sidenav__item span").removeClass("sidenav__item--active");
-    $(".sidenav").removeClass("sidenav--active");
-  });
+  // $(".sidenav__close").on("click", function () {
+  //   $(".sidenav__content").fadeOut();
+  //   $(".sidenav__item span").removeClass("sidenav__item--active");
+  //   $(".sidenav").removeClass("sidenav--active");
+  // });
 
   */
 
   /**
    * Sticky Header
    */
-  const body = document.body;
-  const scrollUp = "scroll-up";
-  const scrollDown = "scroll-down";
-  let lastScroll = 0;
+  // const body = document.body;
+  // const scrollUp = "scroll-up";
+  // const scrollDown = "scroll-down";
+  // let lastScroll = 0;
 
-  window.addEventListener("scroll", () => {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll <= 0) {
-      body.classList.remove(scrollUp);
-      return;
-    }
-    if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
-      // down
-      body.classList.remove(scrollUp);
-      body.classList.add(scrollDown);
-    } else if (
-      currentScroll < lastScroll &&
-      body.classList.contains(scrollDown)
-    ) {
-      // up
-      body.classList.remove(scrollDown);
-      body.classList.add(scrollUp);
-    }
-    lastScroll = currentScroll;
-  });
+  // window.addEventListener("scroll", () => {
+  //   const currentScroll = window.pageYOffset;
+  //   if (currentScroll <= 0) {
+  //     body.classList.remove(scrollUp);
+  //     return;
+  //   }
+  //   if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+  //     // down
+  //     body.classList.remove(scrollUp);
+  //     body.classList.add(scrollDown);
+  //   } else if (
+  //     currentScroll < lastScroll &&
+  //     body.classList.contains(scrollDown)
+  //   ) {
+  //     // up
+  //     body.classList.remove(scrollDown);
+  //     body.classList.add(scrollUp);
+  //   }
+  //   lastScroll = currentScroll;
+  // });
 
   /**
    * Header and Search Interactions
    */
-  const headerEl = document.querySelector(".header");
-  const searchField = document.querySelector(".search input");
+  // const headerEl = document.querySelector(".header");
+  // const searchField = document.querySelector(".search input");
 
-  document
-    .querySelector(".desktop-search-opener")
-    .addEventListener("click", () => {
-      headerEl.classList.add("header--desktop-search");
-      searchField.focus();
-    });
+  // document
+  //   .querySelector(".desktop-search-opener")
+  //   .addEventListener("click", () => {
+  //     headerEl.classList.add("header--desktop-search");
+  //     searchField.focus();
+  //   });
 
-  document
-    .querySelector(".desktop-search-closer")
-    .addEventListener("click", () => {
-      headerEl.classList.remove("header--desktop-search");
-    });
+  // document
+  //   .querySelector(".desktop-search-closer")
+  //   .addEventListener("click", () => {
+  //     headerEl.classList.remove("header--desktop-search");
+  //   });
 
-  document
-    .querySelector(".mobile-search-opener")
-    .addEventListener("click", () => {
-      headerEl.classList.add("header--mobile-search");
-    });
+  // document
+  //   .querySelector(".mobile-search-opener")
+  //   .addEventListener("click", () => {
+  //     headerEl.classList.add("header--mobile-search");
+  //   });
 
-  document.querySelectorAll(".mobile-search-closer").forEach((el) => {
-    el.addEventListener("click", () => {
-      headerEl.classList.remove("header--mobile-search");
-    });
-  });
+  // document.querySelectorAll(".mobile-search-closer").forEach((el) => {
+  //   el.addEventListener("click", () => {
+  //     headerEl.classList.remove("header--mobile-search");
+  //   });
+  // });
 
   /**
    * Accordion
@@ -148,7 +181,7 @@ $(document).ready(function () {
       $(this).addClass("accordion--open");
     }
   });
-});
+
 
 /*************7th jun2022  video poster iFrame ********/
 
@@ -171,6 +204,7 @@ $(document).ready(function () {
   // });
 
   $(".hero__video-wrap").on("click", function () {
+    
     $(this).toggleClass("player");
   });
 });

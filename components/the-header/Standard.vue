@@ -1,21 +1,18 @@
 <template>
-  <section class="section section-headerstandard" :class="classHeader">
+  <section class="md:py-20 section-headerstandard" :class="classHeader">
     <div class="container">
       <div class="header-standard">
-        <div class="lg:w-1/2">
-          <Breadcrumbs
-            v-if="breadcrumbs"
-            
-          ></Breadcrumbs>
-          <p class="title-small">
+        <div class="header-standard__left">
+          <Breadcrumbs v-if="breadcrumbs"></Breadcrumbs>
+          <p class="header-standard__title-text">
             {{ titleText }}
           </p>
-          <h2 class="section-title">
+          <h2 class="header-standard__title">
             {{ title }}
           </h2>
         </div>
-        <div v-if="text || bold" class="flex items-baseline">
-          <span class="section-text">{{ text }} </span>
+        <div v-if="text || bold" class="header-standard__right">
+          <span class="header-standard__text">{{ text }} </span>
           <b class="text-300 font-bold">{{ bold }} </b>
         </div>
 

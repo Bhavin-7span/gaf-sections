@@ -14,6 +14,14 @@
     <HomePage />
     <!-- Header home page End -->
 
+    <!-- OurVision home page Start -->
+    <OurVisionBlock />
+    <!-- OurVision home page End -->
+
+    <!-- Eventpage Start -->
+    <Event />
+    <!-- Eventpage End -->
+
     <!-- Our Programs : Starts -->
     <OurPrograms />
     <!-- Our Programs : Ends -->

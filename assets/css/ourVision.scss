@@ -1,0 +1,26 @@
+.vision{
+
+    @apply sm:flex sm:items-center sm:justify-between;
+&__title{
+    @apply font-body text-d5 text-300 font-medium mb-5  md:text-d5 lg:text-d3 lg:mb-12 ;
+}
+    &__content{
+        @apply mb-4  sm:pr-4  sm:mb-0 md:w-1/2;
+    }
+    &__img{
+        @apply md:w-1/2 ;
+        
+        img{
+            @apply object-cover object-center mb-6 rounded-2xl;
+        }
+      
+            &--content{
+                @apply  md:w-9/12 ;
+
+                p{
+                    @apply mb-4;
+                }
+            }   
+        }
+    
+}
