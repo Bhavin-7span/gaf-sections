@@ -1,33 +1,66 @@
 .header-standard{
-    @apply lg:flex lg:flex-nowrap lg:items-center lg:justify-between text-left; 
-    
+    @apply absolute font-body p-5 my-5 rounded-lg  text-left bg-cover bg-center bg-no-repeat left-0 right-0 top-auto bottom-0 w-11/12 m-auto z-10  ; 
+    @apply md:relative md:p-0 md:rounded-none md:my-0 lg:flex lg:flex-nowrap lg:items-center  lg:justify-between  ;
+
+    background-image: url('/images/h-stnadard-bg.svg'); 
     .breadcrumbs{
         @apply hidden;
     }  
-
     &__left{
         @apply lg:w-1/2 lg:pr-4 ;
     }
     &__right{
         @apply flex items-baseline lg:w-1/2;
     }
+    &__text {
+        @apply text-p1-700 text-b4 ;
+    }
+    &__title{
+        @apply mb-5 text-p1-700 text-d5 lg:text-d2 font-extrabold  ;
+    }
+    &__title-text{
+        @apply text-p1-700 text-b4 mb-2  ;
+    }
+
 } 
 .title-small {
-   @apply  text-p2-500 font-light text-b4 font-body 
+   @apply  text-p2-500 font-light text-b4 font-body ;
 }
 .standardHeader-alt{
     .header-standard{
-        @apply lg:flex-col  lg:justify-center lg:text-center;
+        @apply static flex-col  lg:justify-center lg:text-center;
         .breadcrumbs{
-            @apply lg:justify-center lg:flex;
-            width:100%; 
+            @apply justify-center flex w-full;
         }
         .title-small{
             @apply hidden;
         }
-
         &__right{
-            @apply lg:w-full lg:text-center lg:flex lg:justify-center lg:items-center;
+            @apply w-full text-center flex justify-center items-center;
+        }
+        &__left{
+            @apply w-full text-center flex-col justify-center items-center;
         }
     } 
+}
+.standard-header{
+    @apply relative;
+}
+
+@screen md{
+    .header-standard{   
+        background-image: none; 
+
+        &__title-text{
+            
+            @apply text-p2-300;
+        }
+        &__title{
+            @apply text-p2-300;
+        }
+        &__text{
+            @apply text-p2-300;
+        }
+    }
+
 }

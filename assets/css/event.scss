@@ -1,0 +1,29 @@
+.event-card{
+@apply font-body lg:flex lg:justify-between lg:items-center;
+
+&__image{
+        @apply rounded-2xl md:w-1/2;
+        img{
+            @apply w-full;
+        }
+}
+
+&__content{
+    @apply md:w-1/2 md:m-auto;
+}
+    &__title{
+
+        @apply text-d3 text-p2-300 font-medium;
+    }
+    &__title-text{
+
+        @apply text-b5 text-p2-500 font-normal;
+    }
+    &__subtitle{
+        @apply text-b3 font-medium text-p2-300;
+    }
+    &__text{
+        @apply text-b3 text-500 font-light;
+
+    }
+}

@@ -189,6 +189,35 @@ $(document).ready(function ()  {
   });
   });
 
-
+  $(window).on('load', function () {
+    const sliders = [
+      {
+        target: $('#event-slider'),
+        config: {
+          mobileFirst: true,
+          slidesToShow: 1,
+          arrows: true,
+          nav:true,
+          slidesToScroll: 1,
+          dots: false,
+          appendDots: $('#event-slider-dots'),
+          responsive: [
+            {
+              breakpoint: 1024,
+            },
+          ],
+        },
+        instance: null,
+      },     
+    ]  
+    sliders.forEach(function (slider) {
+      slider.instance = slider.target.slick(slider.config)
+      $(window).on('resize', function () {
+        if (!slider.instance.hasClass('slick-initialized')) {
+          slider.target.slick(slider.config)
+        }
+      })
+    })
+  })
 
 

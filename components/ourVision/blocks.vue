@@ -2,7 +2,7 @@
   <section class="section section-ourVision">
     <div class="container">
       <div class="vision">
-        <div class="vision__content">
+        <div class="vision__content content--medium">
           <h3 class="vision__title">
             {{ title }}
           </h3>
@@ -12,7 +12,7 @@
         </div>
         <div class="vision__img">
           <img :src="`/images/${src}`" alt="George Alexander Foundation" />
-          <div class="vision__img--content">
+          <div class="vision__img--content content--medium">
             <p class="section-text section-text__green">
               {{ text1 }}
             </p>

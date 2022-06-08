@@ -18,6 +18,10 @@
     <OurVisionBlock />
     <!-- OurVision home page End -->
 
+    <!-- Eventpage Start -->
+    <Event />
+    <!-- Eventpage End --
+
     <!-- Footer : Starts -->
     <TheFooter />
     <!-- Footer : Ends -->
