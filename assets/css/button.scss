@@ -64,7 +64,7 @@
 
 .button--p1 {
   &.button--solid {
-    @apply bg-p1-500 text-white;
+    @apply bg-p1-500 text-p1-700;
     @apply hover:bg-p1-700;
   }
 

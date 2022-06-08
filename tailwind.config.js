@@ -57,7 +57,7 @@ module.exports = {
     },
     fontSize: {
       //[fontSize,lineHeight]
-      d1: [pxToRem(100), { letterSpacing: '-3px', lineHeight: pxToRem(80) }],
+      d1: [pxToRem(96), { letterSpacing: '-3px', lineHeight: pxToRem(80) }],
       d2: [pxToRem(72), { letterSpacing: '-3px', lineHeight: pxToRem(72) }],
       d3: [pxToRem(64), { letterSpacing: '-1px', lineHeight: pxToRem(64) }],
       d4: [pxToRem(48), { letterSpacing: 'initial', lineHeight: pxToRem(52) }],
@@ -66,7 +66,7 @@ module.exports = {
       b1: [pxToRem(36), { letterSpacing: 'initial', lineHeight: pxToRem(44) }],
       b2: [pxToRem(32), { letterSpacing: 'initial', lineHeight: pxToRem(40) }],
       b3: [pxToRem(21), { letterSpacing: 'initial', lineHeight: pxToRem(31) }],
-      b4: [pxToRem(17), { letterSpacing: 'initial' , lineHeight: pxToRem(25) }],
+      b4: [pxToRem(16), { letterSpacing: 'initial' , lineHeight: pxToRem(25) }],
       b5: [pxToRem(14), { letterSpacing: 'initial' }],
     },
     colors: {

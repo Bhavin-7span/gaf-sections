@@ -2,11 +2,8 @@
   <section class="section section-headerstandard" :class="classHeader">
     <div class="container">
       <div class="header-standard">
-        <div class="lg:w-1/2">
-          <Breadcrumbs
-            v-if="breadcrumbs"
-            
-          ></Breadcrumbs>
+        <div class="header-standard__left">
+          <Breadcrumbs v-if="breadcrumbs"></Breadcrumbs>
           <p class="title-small">
             {{ titleText }}
           </p>
@@ -14,7 +11,7 @@
             {{ title }}
           </h2>
         </div>
-        <div v-if="text || bold" class="flex items-baseline">
+        <div v-if="text || bold" class="header-standard__right">
           <span class="section-text">{{ text }} </span>
           <b class="text-300 font-bold">{{ bold }} </b>
         </div>

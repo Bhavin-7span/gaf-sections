@@ -14,6 +14,10 @@
     <HomePage />
     <!-- Header home page End -->
 
+    <!-- OurVision home page Start -->
+    <OurVisionBlock />
+    <!-- OurVision home page End -->
+
     <!-- Footer : Starts -->
     <TheFooter />
     <!-- Footer : Ends -->

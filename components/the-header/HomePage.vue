@@ -16,8 +16,8 @@
         </div>
         <div class="hero__content">
           <h2 class="hero-title">{{ title }}</h2>
-          <div class="lg:flex lg:items-start lg:w-1/2">
-            <p class="section-text section-text__green">{{ text }}</p>
+          <div class="md:flex md:items-start md:justify-between">
+            <p class="section-text section-text__green md:w-1/2">{{ text }}</p>
             <Btn
               class="mt-3 w-full sm:w-auto"
               label="Call to action "

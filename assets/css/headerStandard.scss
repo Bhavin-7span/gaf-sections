@@ -1,7 +1,16 @@
 .header-standard{
-    @apply lg:flex lg:flex-nowrap lg:items-center lg:justify-between text-left; .breadcrumbs{
+    @apply lg:flex lg:flex-nowrap lg:items-center lg:justify-between text-left; 
+    
+    .breadcrumbs{
         @apply hidden;
     }  
+
+    &__left{
+        @apply lg:w-1/2 lg:pr-4 ;
+    }
+    &__right{
+        @apply flex items-baseline lg:w-1/2;
+    }
 } 
 .title-small {
    @apply  text-p2-500 font-light text-b4 font-body 
@@ -15,6 +24,10 @@
         }
         .title-small{
             @apply hidden;
+        }
+
+        &__right{
+            @apply lg:w-full lg:text-center lg:flex lg:justify-center lg:items-center;
         }
     } 
 }
