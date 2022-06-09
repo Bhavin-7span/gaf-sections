@@ -7,6 +7,8 @@
           v-for="(event, index) in events"
           :key="index"
           :event="event"
+        />
+        <!-- <EventsBlock
           src="event-img.jpg"
           title="Events"
           titleText="22 JANUARY 2022"
@@ -19,14 +21,7 @@
           titleText="22 JANUARY 2022"
           subtitle="GAF Street Soccer"
           text="Calling all Melbourne-based GAF scholars and alumni! Want toget active, network and support a great cause?..."
-        />
-        <EventsBlock
-          src="event-img.jpg"
-          title="Events"
-          titleText="22 JANUARY 2022"
-          subtitle="GAF Street Soccer"
-          text="Calling all Melbourne-based GAF scholars and alumni! Want toget active, network and support a great cause?..."
-        />
+        /> -->
       </div>
 
       <!-- Slick Dots -->
@@ -42,12 +37,12 @@
 </template>
 
 <script>
-// import events from "@/data/eventBlocks";
-// export default {
-//   data() {
-//     return {
-//       events,
-//     };
-//   },
-// };
+import events from "@/data/eventsBlocks";
+export default {
+  data() {
+    return {
+      events,
+    };
+  },
+};
 </script>

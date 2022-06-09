@@ -21,62 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
       drawer.close();
     });
 });
-$(window).on("load", function () {
-  $(".event-slider").slick({
-    infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: true,
-    dots: false,
-    nav: false,
-    prevArrow:
-      "<img class='a-left control-c prev slick-prev' src='./icons/prev-arrow.svg'>",
-    nextArrow:
-      "<img class='a-right control-c next slick-next' src='./icons/next-arrow.svg'>",
-    responsive: [
-      {
-        breakpoint: 768,
-        settings: {
-          arrows: false,
-          dots: true,
-        },
-      },
-    ],
-  });
-});
 
-// $(window).on("load", function () {
-//   const sliders = [
-//     {
-//       target: $(".event-slider"),
-//       config: {
-//         mobileFirst: true,
-//         slidesToShow: 1,
-//         arrows: false,
-//         slidesToScroll: 1,
-//         dots: true,
-//         appendDots: $(".event-slider-dots"),
-//         responsive: [
-//           {
-//             breakpoint: 1024,
-//           },
-//         ],
-//       },
-//       instance: null,
-//     },
-//   ];
+/*
+ * Event Slider
+ */
 
-//   sliders.forEach(function (slider) {
-//     slider.instance = slider.target.slick(slider.config);
-//     $(window).on("resize", function () {
-//       if (!slider.instance.hasClass("slick-initialized")) {
-//         slider.target.slick(slider.config);
-//       }
-//     });
-//   });
-// });
-
-/* Slider */
 $(window).on("load", function () {
   var $slider = $(".event-slider");
 

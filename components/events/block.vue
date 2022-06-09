@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div v-for="(event, index) in eventList" :key="index" class="eevnt-wrap">
+    <div class="event-wrap">
       <div class="event-slider__item">
         <div class="event-card">
           <div class="event-card__image">
@@ -46,7 +46,7 @@
 export default {
   props: {
     event: Object,
-    eventList: Object,
+    //eventList: Object,
   },
 };
 </script>
