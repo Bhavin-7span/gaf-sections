@@ -6,7 +6,7 @@
 
       <!-- LOGO -->
       <a href="#">
-        <img src="/images/logo.svg" class="w-36" alt="" />
+        <img src="/images/logo.svg" class="w-40" alt="" />
       </a>
       <Btn
         href="#mobile-nav"

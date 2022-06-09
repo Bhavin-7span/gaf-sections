@@ -38,7 +38,7 @@ module.exports = {
       },
     },
     fontFamily: {
-      //display: ["Macklin Text", ...defaultTheme.fontFamily.sans],
+      display: ["LL Riforma", ...defaultTheme.fontFamily.sans],
       body: ["LL Riforma", ...defaultTheme.fontFamily.sans],
     },
     borderRadius: {
