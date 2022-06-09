@@ -4,10 +4,6 @@
     <TheHeader />
     <!-- Header : Ends -->
 
-    <!-- Header:Mobile : Starts-->
-    <TheHeaderMobile />
-    <!-- Header:Mobile : Ends-->
-
     <HeaderStandard />
 
     <!-- Header home page Start -->

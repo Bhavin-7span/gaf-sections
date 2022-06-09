@@ -67,64 +67,57 @@
 
 <script>
 export default {
-  items: [
+ items: [
     {
       label: "Our Vision",
-    },
-    {
-      label: "About",
-    },
-    {
-      label: "What We Support",
       items: [
         {
-          label: "Program Areas",
+          label: "About us ",
+        },
+        { label: "Our People" },
+        {
+          label: "Publications ",
           items: [
             {
-              label: "Arts",
+              label: "Annual reports",
             },
             {
-              label: "Community Wellbeing",
-            },
-            {
-              label: "Early Childhood Development",
-            },
-            {
-              label: "Environmental Conservation",
-            },
-            {
-              label: "Medical Research",
-            },
-            {
-              label: "Public Health Research",
+              label: "Campus Newsletter",
             },
           ],
-        },
-        {
-          label: "Major Grants",
-        },
-        {
-          label: "Sub-Funds",
+
+           card: {
+        subtitle: "Recent Post",
+        title: "50th Anniversary Hoodie Competition",
+        image: "images/card-img.png",
+        date: "07 April 2022",
+        post: "Posted by admin",
+      },
         },
       ],
+
       card: {
-        image: "images/card-image.png",
-        title: "Card Title",
-        desc: "This round is for Major grants and program areas by invitation only.",
-        button: "Find out more",
+        subtitle: "Recent Post",
+        title: "50th Anniversary Hoodie Competition",
+        image: "images/card-img.png",
+        date: "07 April 2022",
+        post: "Posted by admin",
       },
     },
     {
-      label: "Can We Apply",
+      label: "Our Programs",
+    },
+    {
+      label: "Our History",
+    },
+    {
+      label: "Our Community",
     },
     {
       label: "Grantees",
     },
     {
-      label: "Knowledge Center",
-    },
-    {
-      label: "News",
+      label: "Contact Us",
     },
   ],
 };

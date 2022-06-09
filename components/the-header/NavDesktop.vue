@@ -28,6 +28,14 @@ export default {
               label: "Campus Newsletter",
             },
           ],
+
+          card: {
+            subtitle: "Recent Post",
+            title: "50th Anniversary Hoodie Competition",
+            image: "images/card-img.png",
+            date: "07 April 2022",
+            post: "Posted by admin",
+          },
         },
       ],
 
