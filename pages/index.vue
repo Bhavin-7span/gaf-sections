@@ -4,7 +4,9 @@
     <TheHeader />
     <!-- Header : Ends -->
 
+    <!-- Header Standard : Starts -->
     <HeaderStandard />
+    <!-- Header Standard : Ends -->
 
     <!-- Header home page Start -->
     <HomePage />
@@ -15,8 +17,20 @@
     <!-- OurVision home page End -->
 
     <!-- Eventpage Start -->
-    <Event />
-    <!-- Eventpage End --
+    <!-- <Event /> -->
+    <!-- Eventpage End -->
+
+    <!-- Our Programs : Starts -->
+    <OurPrograms />
+    <!-- Our Programs : Ends -->
+
+    <!-- Our Community : Starts -->
+    <OurCommunity />
+    <!-- Our Community : Ends -->
+
+    <!-- Subscribe : Starts -->
+    <Subscribe />
+    <!-- Subscribe : Ends -->
 
     <!-- Footer : Starts -->
     <TheFooter />

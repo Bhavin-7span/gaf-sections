@@ -17,8 +17,7 @@ export default {
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "./static/images/favicon.png" }],
 
-    script: [
-    
+    script: [    
       {
         src: "/js/mmenu-light.min.js",
       },

@@ -61,7 +61,7 @@ module.exports = {
       d4: [pxToRem(48), { letterSpacing: "initial", lineHeight: pxToRem(52) }],
       d5: [pxToRem(36), { letterSpacing: "initial", lineHeight: pxToRem(32) }],
       d6: [pxToRem(24), { letterSpacing: "initial", lineHeight: pxToRem(30) }],
-      b1: [pxToRem(36), { letterSpacing: "initial", lineHeight: pxToRem(44) }],
+      b1: [pxToRem(40), { letterSpacing: "initial", lineHeight: pxToRem(44) }],
       b2: [pxToRem(32), { letterSpacing: "initial", lineHeight: pxToRem(40) }],
       b3: [pxToRem(21), { letterSpacing: "initial", lineHeight: pxToRem(31) }],
       b4: [pxToRem(16), { letterSpacing: "initial", lineHeight: pxToRem(25) }],
@@ -83,6 +83,7 @@ module.exports = {
         100: "#7FE27B",
         200: "#1C4953",
         300: "#9c9c9c",
+        500: "#E2ECFF"
       },
       white: "#ffffff",
       black: "#000000",

@@ -28,7 +28,6 @@ export default {
               label: "Campus Newsletter",
             },
           ],
-
           card: {
             subtitle: "Recent Post",
             title: "50th Anniversary Hoodie Competition",

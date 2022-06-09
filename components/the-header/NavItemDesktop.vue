@@ -4,8 +4,8 @@
     <!-- SUBNAV -->
     <div class="desktop-nav__items">
       <div class="container">
-        <div class="flex">
-          <div class="w-15/24">
+        <div class="flex justify-between">
+          <div class="w-10/12">
             <h2 class="desktop-subnav__title">{{ data.label }}</h2>
             <ul class="desktop-subnav">
               <!-- COL:SUBNAV -->
