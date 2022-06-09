@@ -7,7 +7,7 @@
       </button>
     </div>
     <div class="ml-3 xl:hidden">
-      <Btn class="mobile-search-closer" size="md" icon="/icons/close-p1.svg" />
+      <Btn class="mobile-search-closer" size="md" icon="/icons/close.svg" />
     </div>
   </div>
 </template>

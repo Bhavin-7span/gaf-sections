@@ -17,7 +17,7 @@
     <div class="flex items-center">
       <Btn
         href="#mobile-nav"
-        class="mobile-nav-closer"
+        class="mobile-nav-user"
         icon="/icons/user.svg"
         size="md"
       />
