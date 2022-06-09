@@ -3,7 +3,7 @@
     @apply md:relative  md:p-0 md:rounded-none md:my-0 lg:flex lg:flex-nowrap lg:items-center  lg:justify-between  ;
    
     background-image: url('/images/h-stnadard-bg.svg'); 
-    background-color: #7FE27B; 
+
     .breadcrumbs{
         @apply hidden;
     }  
@@ -47,6 +47,10 @@
 .standard-header{
     @apply relative;
 }
+
+
+
+
 
 @screen md{
     .section-headerstandard {

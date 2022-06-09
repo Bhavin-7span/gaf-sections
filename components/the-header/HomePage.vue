@@ -3,16 +3,15 @@
     <div class="container">
       <div class="hero">
         <div class="hero__video">
-          <div class="hero__video-wrap relative">
+          <div class="hero__video-wrap">
             <img src="../../static/images/video-poster.jpg" id="overlay" />
             <div id="player"></div>
-            <a
-              target="_blank"
-              href="https://developers.google.com/youtube/iframe_api_reference"
-            >
-              Youtube iframe API</a
-            >
           </div>
+          <a
+            target="_blank"
+            href="https://developers.google.com/youtube/iframe_api_reference"
+          >
+          </a>
         </div>
         <div class="hero__content">
           <h2 class="hero-title">{{ title }}</h2>

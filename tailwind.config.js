@@ -66,6 +66,7 @@ module.exports = {
       b3: [pxToRem(21), { letterSpacing: "initial", lineHeight: pxToRem(31) }],
       b4: [pxToRem(16), { letterSpacing: "initial", lineHeight: pxToRem(25) }],
       b5: [pxToRem(14), { letterSpacing: "initial" }],
+      b6: [pxToRem(11), { letterSpacing: "initial" }],
     },
     colors: {
       //Primary Colors
@@ -80,17 +81,15 @@ module.exports = {
       },
 
       g1: {
-        100: "#7FE27B",
-        200: "#1C4953",
+        400: "#FAFAFA",
         300: "#9c9c9c",
-        500: "#E2ECFF"
+        200: "#1C4953",
+        100: "#7FE27B",
+        500: "#E2ECFF",
       },
       white: "#ffffff",
       black: "#000000",
       transparent: "transparent",
-      900: "#302e2a",
-      500: "#676784",
-      300: "#443F3F",
     },
   },
   extend: {

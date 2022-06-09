@@ -4,6 +4,35 @@
   position: sticky;
   top: -100%;
 }
+
+.scroll-down {
+  .header {
+    position: sticky;
+    top: 0;
+    background: #2c555f;
+  }
+  .desktop-header{
+    @apply bg-transparent;
+  }
+  .desktop-nav{
+    
+    &__label{
+        @apply text-p1-500;
+    }}
+  .desktop-header-logo-img{
+
+    svg{
+    
+      path{
+      
+        fill:#3DDB5C;
+      
+      }
+    }
+  
+    }
+
+}
 //TOPBAR
 .topbar {
   @apply px-5;
@@ -161,7 +190,7 @@
   li{
 
     a{
-        @apply text-300 text-b3  font-body font-light;
+        @apply text-p2-300 text-b3  font-body font-light;
     }
   }
 }
@@ -180,7 +209,7 @@
 .mobile-nav__links {
   @apply hidden lg:flex items-center justify-center;
   a {
-    @apply text-300 px-4;
+    @apply font-light px-4;
     + a {
       @apply border-l border-white;
     }
@@ -203,8 +232,7 @@
   @apply focus:outline-none;
 
   &:placeholder{
-@apply text-500;
-
+    @apply font-medium;
   }
 }
 
@@ -213,9 +241,7 @@
   height: 3.5rem;
 }
 .search__input:placeholder{
-
-
-@apply text-500  font-body text-b4 font-light ;
+  @apply font-body text-b4 font-light ;
 }
 .search__container:focus-within , .search__container:focus{
   

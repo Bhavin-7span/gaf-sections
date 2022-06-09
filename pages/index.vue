@@ -1,4 +1,4 @@
-<template>
+<template comments>
   <div class="sections">
     <!-- Header : Starts -->
     <TheHeader />
@@ -17,7 +17,7 @@
     <!-- OurVision home page End -->
 
     <!-- Eventpage Start -->
-    <!-- <Event /> -->
+    <Event />
     <!-- Eventpage End -->
 
     <!-- Our Programs : Starts -->

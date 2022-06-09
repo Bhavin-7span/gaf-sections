@@ -1,53 +1,23 @@
 [
-    {
-      "image":"",
-      "tags":[
-        {
-          "name":"Maintenance",
-          "link":"javascript:;"
-        },
-        {
-          "name":"Seasonal care",
-          "link":"javascript:;"
-        }
-      ],
-      "by":"Lilydale Instant Lawn team",
-      "date":"January 12, 2021",
-      "title":"5 Top Tips to Prepare Your Lawn for Spring",
-      "text":"Spring is just around the corner! Your lawn has been resting through the colder months, but..."
-    },
-    {
-      "image":"",
-      "tags":[
-        {
-          "name":"Maintenance",
-          "link":"javascript:;"
-        },
-        {
-          "name":"Seasonal care",
-          "link":"javascript:;"
-        }
-      ],
-      "by":"Lilydale Instant Lawn team",
-      "date":"January 12, 2021",
-      "title":"Aerating Your Lawn?",
-      "text":"Main reason for aerating is to alleviate soil compaction. Soil compaction limits the..."
-    },
-    {
-      "image":"",
-      "tags":[
-        {
-          "name":"Maintenance",
-          "link":"javascript:;"
-        },
-        {
-          "name":"Seasonal care",
-          "link":"javascript:;"
-        }
-      ],
-      "by":"Lilydale Instant Lawn team",
-      "date":"January 12, 2021",
-      "title":"Autumn Lawn Care",
-      "text":"Well, it’s that time of year again! The days are getting shorter, the temperature is getting..."
-    }
-  ]
+  {
+    "src":"event-img.jpg",
+    "title":"Events",
+    "titleText":"22 JANUARY 2022",
+    "subtitle":"GAF Street Soccer",
+    "text":"Calling all Melbourne-based GAF scholars and alumni! Want toget active, network and support a great cause?..."
+  },
+  {
+    "src":"event-img.jpg",
+    "title":"Events",
+    "titleText":"22 JANUARY 2022",
+    "subtitle":"GAF Street Soccer",
+    "text":"Calling all Melbourne-based GAF scholars and alumni! Want toget active, network and support a great cause?..."
+  },
+  {
+    "src":"event-img.jpg",
+    "title":"Events",
+    "titleText":"22 JANUARY 2022",
+    "subtitle":"GAF Street Soccer",
+    "text":"Calling all Melbourne-based GAF scholars and alumni! Want toget active, network and support a great cause?..."
+  }
+]

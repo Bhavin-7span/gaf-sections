@@ -13,7 +13,7 @@
         </div>
         <div v-if="text || bold" class="header-standard__right">
           <span class="header-standard__text">{{ text }} </span>
-          <b class="text-300 font-bold">{{ bold }} </b>
+          <b class="font-bold">{{ bold }} </b>
         </div>
 
         <div class="tab" v-if="tabNavigation">
