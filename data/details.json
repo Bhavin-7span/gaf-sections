@@ -1,0 +1,72 @@
+[
+    {
+      "title": "Founder – George H. Alexander AM (1910–2008)",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
+      "isColumn": false,
+      "questions": [
+        {
+          "query": "Lorem ipsum dolor sit amet, consectetur?",
+          "answer":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit."
+        },
+        {
+          "query":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor? ",
+          "answer":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore."
+        },
+        {
+          "query": "Lorem ipsum dolor sit amet, consectetur?",
+          "answer":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore."
+        },
+        {
+          "query": "Lorem ipsum dolor sit amet, consectetur?",
+          "answer":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit."
+        }
+      ]
+    },
+    {
+      "title": "A love of learning",
+      "description":
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore.",
+      "isColumn": true,
+      "questions": [
+        {
+          "query": "Lorem ipsum dolor sit amet, consectetur?",
+          "answer":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit."
+        },
+        {
+          "query":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor? ",
+          "answer":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore."
+        },
+        {
+          "query": "Lorem ipsum dolor sit amet, consectetur?",
+          "answer":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore."
+        },
+        {
+          "query": "Lorem ipsum dolor sit amet, consectetur?",
+          "answer":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit."
+        },
+        {
+          "query":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor? ",
+          "answer":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore."
+        },
+        {
+          "query":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor? ",
+          "answer":
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed doeiusmod tempor incididunt ut labore et dolore."
+        }
+      ]
+    }
+  ]

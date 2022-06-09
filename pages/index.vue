@@ -10,6 +10,23 @@
 
     <HeaderStandard />
 
+    <Content />
+
+    <Heading />
+
+    <HowToApply
+      title="How to apply"
+      description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      link="Learn More about How to Apply"
+    />
+
+    <HonourRoll
+      text="current recipients and alumni Database"
+      title="Honour Roll"
+      content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+      btnText="View Honour Role"
+    />
+
     <!-- Footer : Starts -->
     <TheFooter />
     <!-- Footer : Ends -->

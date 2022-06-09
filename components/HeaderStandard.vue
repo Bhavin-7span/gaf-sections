@@ -11,7 +11,7 @@
       text="The George Alexander Foundation partners with selected institutions, primarily tertiary and other educational institutions, to offer scholarship and fellowship programs."
     />
     <TheHeaderStandard
-      breadcrumbs="true"
+      :breadcrumbs="true"
       class="standardHeader-alt"
       titleText="Privacy Policy"
       title="Privacy Policy"
