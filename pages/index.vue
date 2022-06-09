@@ -1,12 +1,8 @@
-<template>
+<template comments>
   <div class="sections">
     <!-- Header : Starts -->
     <TheHeader />
     <!-- Header : Ends -->
-
-    <!-- Header Standard : Starts -->
-    <HeaderStandard />
-    <!-- Header Standard : Ends -->
 
     <!-- Header home page Start -->
     <HomePage />
@@ -16,10 +12,6 @@
     <OurVisionBlock />
     <!-- OurVision home page End -->
 
-    <!-- Eventpage Start -->
-    <Event />
-    <!-- Eventpage End -->
-
     <!-- Our Programs : Starts -->
     <OurPrograms />
     <!-- Our Programs : Ends -->
@@ -27,6 +19,10 @@
     <!-- Our Community : Starts -->
     <OurCommunity />
     <!-- Our Community : Ends -->
+
+    <!-- Eventpage Start -->
+    <Event />
+    <!-- Eventpage End -->
 
     <!-- Subscribe : Starts -->
     <Subscribe />

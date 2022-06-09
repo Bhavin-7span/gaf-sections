@@ -4,7 +4,7 @@
       <div class="hero">
         <div class="hero__video">
           <div class="hero__video-wrap">
-            <img src="../../static/images/video-poster.jpg" />
+            <img src="/images/video-poster.jpg" />
             <iframe
               src="https://www.youtube.com/embed/FSvFcvm9YKg"
               title="YouTube video player"

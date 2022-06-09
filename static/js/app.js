@@ -22,35 +22,64 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-$(window).on("load", function () {
-  const sliders = [
-    {
-      target: $("#event-slider"),
-      config: {
-        mobileFirst: true,
-        slidesToShow: 1,
-        arrows: false,
-        slidesToScroll: 1,
-        dots: true,
-        appendDots: $("#event-slider-dots"),
-        responsive: [
-          {
-            breakpoint: 1024,
-          },
-        ],
-      },
-      instance: null,
-    },
-  ];
+// $(window).on("load", function () {
+//   const sliders = [
+//     {
+//       target: $(".event-slider"),
+//       config: {
+//         mobileFirst: true,
+//         slidesToShow: 1,
+//         arrows: false,
+//         slidesToScroll: 1,
+//         dots: true,
+//         appendDots: $(".event-slider-dots"),
+//         responsive: [
+//           {
+//             breakpoint: 1024,
+//           },
+//         ],
+//       },
+//       instance: null,
+//     },
+//   ];
 
-  sliders.forEach(function (slider) {
-    slider.instance = slider.target.slick(slider.config);
-    $(window).on("resize", function () {
-      if (!slider.instance.hasClass("slick-initialized")) {
-        slider.target.slick(slider.config);
-      }
+//   sliders.forEach(function (slider) {
+//     slider.instance = slider.target.slick(slider.config);
+//     $(window).on("resize", function () {
+//       if (!slider.instance.hasClass("slick-initialized")) {
+//         slider.target.slick(slider.config);
+//       }
+//     });
+//   });
+// });
+
+/* Slider */
+$(window).on("load", function () {
+  var $slider = $(".event-slider");
+
+  if ($slider.length) {
+    var currentSlide;
+    var slidesCount;
+    var sliderCounter = document.createElement("div");
+    sliderCounter.classList.add("slider__counter");
+
+    var updateSliderCounter = function (slick, currentIndex) {
+      currentSlide = slick.slickCurrentSlide() + 1;
+      slidesCount = slick.slideCount;
+      $(sliderCounter).text(currentSlide + "/" + slidesCount);
+    };
+
+    $slider.on("init", function (event, slick) {
+      $slider.append(sliderCounter);
+      updateSliderCounter(slick);
     });
-  });
+
+    $slider.on("afterChange", function (event, slick, currentSlide) {
+      updateSliderCounter(slick, currentSlide);
+    });
+
+    $slider.slick();
+  }
 });
 
 $(document).ready(function () {

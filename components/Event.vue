@@ -2,7 +2,7 @@
   <section class="section event">
     <div class="container">
       <!-- Slider -->
-      <div id="event-slider" class="event-block">
+      <div class="event-slider event-block">
         <EventsBlock
           src="event-img.jpg"
           title="Events"
@@ -30,7 +30,7 @@
       <div
         class="mt-8 border-b pb-8 border-g1-300 text-center lg:hidden lg:border-none lg:p-0 lg:text-left"
       >
-        <div id="event-slider-dots" class="ipf-slick-dots">
+        <div class="event-slider-dots">
           <!-- Slider Dots Will Be Apended Here -->
         </div>
       </div>
