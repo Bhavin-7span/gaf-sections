@@ -1,5 +1,5 @@
 <template comments>
-  <div>
+  <div class="lg:ml-auto">
     <p class="nav-card__subtitle">{{ data.subtitle }}</p>
     <div class="nav-card">
       <img :src="data.image" alt="" />

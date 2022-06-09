@@ -1,7 +1,7 @@
 <template comments>
   <div class="search">
     <div class="search__container">
-      <input placeholder="Search" class="search__input" />
+      <input placeholder="Search for keywords" class="search__input" />
       <button type="button" class="search__submit">
         <img src="/icons/search.svg" alt="" />
       </button>
