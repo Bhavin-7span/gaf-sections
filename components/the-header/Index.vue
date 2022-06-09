@@ -3,9 +3,9 @@
     <div class="container">
       <!-- HEADER:DESKTOP -->
       <TheHeaderDesktop />
-
-      <!-- HEADER:MOBILE -->
-      <TheHeaderMobile />
     </div>
+
+    <!-- HEADER:MOBILE -->
+    <TheHeaderMobile />
   </section>
 </template>

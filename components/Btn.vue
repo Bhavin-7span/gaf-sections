@@ -26,5 +26,5 @@ export default {
     icon: String,
     arrow: Boolean,
   },
-}
+};
 </script>

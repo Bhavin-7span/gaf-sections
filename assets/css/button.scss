@@ -1,6 +1,8 @@
 .button {
-  @apply inline-flex items-center justify-center rounded whitespace-nowrap;
-
+  @apply text-b5 font-normal inline-flex items-center justify-center rounded whitespace-nowrap;
+  img {
+      @apply w-3;
+    }
   &:hover {
     .button__arrow {
       &:after,
@@ -11,7 +13,7 @@
   }
 
   .button__icon {
-    @apply mr-2 h-5;
+    @apply mr-2 w-3;
   }
 }
 
@@ -48,7 +50,7 @@
 }
 
 .button--link {
-  @apply px-0 h-auto;
+  @apply px-0 h-auto font-medium text-b4;
 }
 
 .button--edge {
@@ -64,17 +66,42 @@
 
 .button--p1 {
   &.button--solid {
-    @apply bg-p1-500 text-white;
-    @apply hover:bg-p1-700;
+    @apply bg-p1-500 text-p1-700;
+    @apply hover:bg-p1-700 hover:text-p1-500;
   }
 
   &.button--outline {
     @apply border-2 border-p1-500 ;
-    @apply hover:bg-p1-500 hover:text-white;
+    @apply hover:bg-p1-500 hover:text-p1-700;
   }
 
   &.button--link {
-    @apply text-p1-500;
+    @apply text-p1-700;
+  }
+
+  .button__arrow{
+    @apply  text-p1-500  ;
+  }
+}
+
+.button--p1-dark{
+  &.button--solid {
+    @apply bg-p1-500 text-p1-700 border border-p1-700;
+    @apply hover:bg-p1-700 hover:text-p1-500 hover:border-p1-500;
+  }
+  
+  &.button--outline {
+    @apply border border-p1-500 text-p1-500;
+    @apply hover:bg-p1-500 hover:text-white;
+  }
+
+    &.button--link {
+      @apply text-p1-700;
+    }
+}
+.button--p1-dark:hover{
+  img{
+    filter: grayscale(1) brightness(8.5);
   }
 }
 
@@ -84,7 +111,22 @@
     @apply hover:bg-p2-500;
   }
 }
+ 
+.button--s1 {
+  &.button--solid {
+    @apply bg-p1-700 text-p1-500  ; 
+    @apply hover:text-p1-700 hover:bg-p1-500;
+  }
 
+  &.button--outline {
+    @apply border-2 border-p1-500 ;
+    @apply hover:bg-p1-500 hover:text-p1-700;
+  }
+
+  &.button--link {
+    @apply text-p1-500;
+  }
+}
 
 .button--white {
   &.button--trn {
@@ -97,14 +139,11 @@
   }
 }
 
-
-
 .button__arrow {
-  @apply h-0.5 w-9 relative;
+  @apply h-0.5 w-9 relative text-b3;
   background-color: currentColor;
   position: relative;
   margin-left: 12px;
-
   &:after {
     transition: transform 0.3s ease 0s;
     content: '';
@@ -130,5 +169,5 @@
 }
 
 .button-link__icon {
-  @apply h-5 mr-2;
+  @apply w-3 mr-2;
 }

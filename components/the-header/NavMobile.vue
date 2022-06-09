@@ -40,7 +40,6 @@
       <li>
         <!-- ACTIONS -->
         <div class="border-t-2 border-white border-b-2 py-5 flex items-center">
-          <Btn color="white" size="md" theme="trn" label="My Account" />
           <Btn
             size="md"
             theme="login"
@@ -70,61 +69,147 @@ export default {
   items: [
     {
       label: "Our Vision",
-    },
-    {
-      label: "About",
-    },
-    {
-      label: "What We Support",
       items: [
         {
-          label: "Program Areas",
+          label: "About us ",
+        },
+        { label: "Our People" },
+        {
+          label: "Publications ",
           items: [
             {
-              label: "Arts",
+              label: "Annual reports",
             },
             {
-              label: "Community Wellbeing",
-            },
-            {
-              label: "Early Childhood Development",
-            },
-            {
-              label: "Environmental Conservation",
-            },
-            {
-              label: "Medical Research",
-            },
-            {
-              label: "Public Health Research",
+              label: "Campus Newsletter",
             },
           ],
-        },
-        {
-          label: "Major Grants",
-        },
-        {
-          label: "Sub-Funds",
+          card: {
+            subtitle: "Recent Post",
+            title: "50th Anniversary Hoodie Competition",
+            image: "images/card-img.png",
+            date: "07 April 2022",
+            post: "Posted by admin",
+          },
         },
       ],
+
       card: {
-        image: "images/card-image.png",
-        title: "Card Title",
-        desc: "This round is for Major grants and program areas by invitation only.",
-        button: "Find out more",
+        subtitle: "Recent Post",
+        title: "50th Anniversary Hoodie Competition",
+        image: "images/card-img.png",
+        date: "07 April 2022",
+        post: "Posted by admin",
       },
     },
     {
-      label: "Can We Apply",
+      label: "Our Programs",
+      items: [
+        {
+          label: "About us ",
+        },
+        { label: "Our People" },
+        {
+          label: "Publications ",
+          items: [
+            {
+              label: "Annual reports",
+            },
+            {
+              label: "Campus Newsletter",
+            },
+          ],
+          card: {
+            subtitle: "Recent Post",
+            title: "50th Anniversary Hoodie Competition",
+            image: "images/card-img.png",
+            date: "07 April 2022",
+            post: "Posted by admin",
+          },
+        },
+      ],
+
+      card: {
+        subtitle: "Recent Post",
+        title: "50th Anniversary Hoodie Competition",
+        image: "images/card-img.png",
+        date: "07 April 2022",
+        post: "Posted by admin",
+      },
     },
     {
-      label: "Grantees",
+      label: "Our History",
+      items: [
+        {
+          label: "About us ",
+        },
+        { label: "Our People" },
+        {
+          label: "Publications ",
+          items: [
+            {
+              label: "Annual reports",
+            },
+            {
+              label: "Campus Newsletter",
+            },
+          ],
+          card: {
+            subtitle: "Recent Post",
+            title: "50th Anniversary Hoodie Competition",
+            image: "images/card-img.png",
+            date: "07 April 2022",
+            post: "Posted by admin",
+          },
+        },
+      ],
+
+      card: {
+        subtitle: "Recent Post",
+        title: "50th Anniversary Hoodie Competition",
+        image: "images/card-img.png",
+        date: "07 April 2022",
+        post: "Posted by admin",
+      },
     },
     {
-      label: "Knowledge Center",
+      label: "Our Community",
+      items: [
+        {
+          label: "About us ",
+        },
+        { label: "Our People" },
+        {
+          label: "Publications ",
+          items: [
+            {
+              label: "Annual reports",
+            },
+            {
+              label: "Campus Newsletter",
+            },
+          ],
+          card: {
+            subtitle: "Recent Post",
+            title: "50th Anniversary Hoodie Competition",
+            image: "images/card-img.png",
+            date: "07 April 2022",
+            post: "Posted by admin",
+          },
+        },
+      ],
+
+      card: {
+        subtitle: "Recent Post",
+        title: "50th Anniversary Hoodie Competition",
+        image: "images/card-img.png",
+        date: "07 April 2022",
+        post: "Posted by admin",
+      },
     },
+
     {
-      label: "News",
+      label: "Contact Us",
     },
   ],
 };

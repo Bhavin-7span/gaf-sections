@@ -1,0 +1,10 @@
+.section-programs{
+  border-radius: 164px 0px 0px 0px;
+  @apply lg:rounded-tl-none;
+}
+.program__left{
+  img{
+    box-shadow: 0px 0px 40px 4px rgb(0 0 0 / 40%);
+    @apply w-full rounded-xl;
+  }
+}

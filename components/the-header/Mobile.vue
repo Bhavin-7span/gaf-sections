@@ -11,7 +11,7 @@
       <Btn
         href="#mobile-nav"
         class="mobile-nav-closer"
-        icon="/icons/close-p1.svg"
+        icon="/icons/close.svg"
         size="md"
       />
       <Btn
