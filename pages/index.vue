@@ -17,7 +17,7 @@
     <!-- OurVision home page End -->
 
     <!-- Eventpage Start -->
-    <Event />
+    <!-- <Event /> -->
     <!-- Eventpage End -->
 
     <!-- Our Programs : Starts -->
