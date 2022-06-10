@@ -1,88 +1,79 @@
-.header-standard{
-    @apply absolute font-body p-5 my-5 rounded-lg  text-left bg-cover bg-center bg-no-repeat left-0 right-0 top-auto bottom-0 w-11/12 m-auto z-10  ; 
-    @apply md:relative  md:p-0 md:rounded-none md:my-0 lg:flex lg:flex-nowrap lg:items-center  lg:justify-between  ;
-   
-   
-
-    .breadcrumbs{
-        @apply hidden;
-    }  
-    &__left{
-        @apply lg:w-1/2 lg:pr-4 ;
+.header-standard {
+    @apply absolute font-body p-5 my-5 rounded-lg  text-left bg-cover bg-center bg-no-repeat left-0 right-0 top-auto bottom-0 w-11/12 m-auto z-10;
+    @apply md:relative  lg:p-0 md:rounded-none md:my-0 lg:flex lg:flex-nowrap lg:items-center  lg:justify-between;
+  
+    .breadcrumbs {
+      @apply hidden;
     }
-    &__right{
-        @apply flex items-baseline lg:w-1/2;
+    &__left {
+      @apply lg:w-1/2 lg:pr-4;
+    }
+    &__right {
+      @apply flex items-baseline lg:w-1/2;
     }
     &__text {
-        @apply font-light text-d7 text-p1-700 md:text-p2-300;
+      @apply font-light text-d7 text-p1-700 md:text-p2-300;
     }
-    &__title{
-        @apply mb-5 text-b1 font-medium text-p1-700 tracking-tight md:text-p2-300 md:font-extrabold lg:text-d2;
+    &__title {
+      @apply mb-5 text-b1 font-medium text-p1-700 tracking-tight md:text-p2-300 md:font-extrabold lg:text-d2;
     }
-    &__title-text{
-        @apply text-b4 text-p1-700 font-normal md:text-p2-300 md:font-light lg:text-d7 lg:mb-1;
+    &__title-text {
+      @apply text-b4 text-p1-700 font-normal md:text-p2-300 md:font-light lg:text-d7 lg:mb-1;
     }
-
-} 
-.title-small {
-   @apply  text-p2-500 font-light text-b4 font-body ;
-}
-.standardHeader-alt{
-    .header-standard{
-        @apply static flex-col  lg:justify-center lg:text-center;
-        .breadcrumbs{
-            @apply justify-center flex w-full;
-        }
-        .title-small{
-            @apply hidden;
-        }
-        &__right{
-            @apply w-full text-center flex justify-center items-center;
-        }
-        &__left{
-            @apply w-full text-center flex-col justify-center items-center;
-        }
-    } 
-}
-.standard-header{
+  }
+  .title-small {
+    @apply text-p2-500 font-light text-b4 font-body;
+  }
+  .standardHeader-alt {
+    .header-standard {
+      @apply static flex-col  lg:justify-center lg:text-center;
+      .breadcrumbs {
+        @apply justify-center flex w-full;
+      }
+      .title-small {
+        @apply hidden;
+      }
+      &__right {
+        @apply w-full text-center flex justify-center items-center;
+      }
+      &__left {
+        @apply w-full text-center flex-col justify-center items-center;
+      }
+    }
+  }
+  .standard-header {
     @apply relative;
-}
-
-
-
-
-
-@screen md{
+  }
+  
+  @screen md {
     .section-headerstandard {
-        .container{
-            @apply px-4;
-        }
+      .container {
+        @apply px-4;
+      }
     }
-    .header-standard{  
-        @apply bg-none ;
-        background-color:none !important;
-        background-image: none; 
-
-        &__title-text{
-            
-            @apply text-p2-300;
-        }
-        &__title{
-            @apply text-p2-300;
-        }
-        &__text{
-            @apply text-p2-300;
-        }
+    .header-standard {
+      @apply bg-none;
+      background-color: none !important;
+      background-image: none;
+  
+      &__title-text {
+        @apply text-p2-300;
+      }
+      &__title {
+        @apply text-p2-300;
+      }
+      &__text {
+        @apply text-p2-300;
+      }
     }
-}
-
-.section-headerstandard .container{
-
+  }
+  
+  .section-headerstandard .container {
     @apply p-0;
-}
-@media screen and (max-width: 992px) {
-    .header-standard{
-        background-image: url('/images/h-stnadard-bg.png'); 
-
+  }
+  @media screen and (max-width: 992px) {
+    .header-standard {
+      background-image: url("/images/h-stnadard-bg.png");
     }
-}
+  }
+  

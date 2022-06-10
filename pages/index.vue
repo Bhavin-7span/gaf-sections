@@ -41,6 +41,8 @@
       description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
       link="Learn More about How to Apply"
     /> -->
+    <!-- 
+    <EventsCard /> -->
 
     <HonourRoll
       text="current recipients and alumni Database"
