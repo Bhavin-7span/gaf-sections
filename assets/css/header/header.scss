@@ -1,30 +1,39 @@
 .header {
-  @apply  bg-white z-40 lg:pt-7;
+  @apply  z-40 lg:py-7;
   transition: all 0.3s ease 0s;
   position: sticky;
   top: -100%;
 }
 
-.scroll-down {
-  .header {
-    position: sticky;
-    top: 0;
-    background: #2c555f;
+.desktop-header{
+  @apply bg-transparent;
+}
+
+
+.scroll-up {
+  .mobile-header__top {
+    background: transparent;
   }
   .desktop-header{
     @apply bg-transparent;
   }
-  .desktop-nav{
-    
-    &__label{
-        @apply text-p1-500;
-    }}
+}
+.scroll-down {
+
+  .desktop-header{
+    @apply bg-transparent;
+  }
+  .header {
+    @apply sticky top-0 bg-p1-700;
+ 
+  }
+  .header--desktop-search{
+
+  }
   .desktop-header-logo-img{
 
-    svg{
-    
-      path{
-      
+    svg{    
+      path{      
         fill:#3DDB5C;
       
       }
@@ -32,6 +41,93 @@
   
     }
 
+  .desktop-search-closer{
+
+    svg {
+      path{
+      fill: #3DDB5C ;
+      stroke: #3DDB5C;
+      }
+    }
+  }
+  .mobile-nav-user{
+
+    svg {
+      path{
+      fill: #3DDB5C;
+      }
+    }
+  }
+  .desktop-search-opener{
+    svg {
+      path{
+      fill: #3DDB5C;
+      }
+    }
+  }
+  .desktop-nav{
+    
+    &__label{
+        @apply text-p1-500;
+    }
+  }
+
+  .desktop-nav{
+    &__label{
+      @apply text-p1-500;
+      .active{   @apply text-p1-500;
+        &:after{
+          
+          filter: invert(84%) sepia(60%) saturate(428%) hue-rotate(54deg) 
+          brightness(96%) contrast(83%);
+  
+  
+        }
+      }
+  }} 
+  .mobile-search-opener{
+    svg{
+
+      path{
+        
+        stroke : #3DDB5C;
+      }
+    }
+  }
+  .mobile-nav-opener {
+    svg{
+
+    line{
+        fill: #3DDB5C;
+        stroke : #3DDB5C;
+      }
+    }
+  }  
+  .mobile-logo{
+    svg{
+
+      path{
+        fill: #3DDB5C;
+      }
+    }
+  }
+
+}
+.scroll-up .header{
+  background:#fff;
+}
+
+
+.scroll-down .mobile-nav-closer svg path {
+  fill: #3DDB5C;
+  stroke: #3ddb5c;
+}
+.scroll-down .desktop-nav__label.active{
+color:#7fe27b;
+}
+.scroll-down .desktop-nav__label.active:after{
+  filter: invert(84%) sepia(60%) saturate(428%) hue-rotate(54deg) 
+  brightness(96%) contrast(83%);
 }
 //TOPBAR
 .topbar {
@@ -68,14 +164,14 @@
 
 // HEADER: DESKTOP
 .desktop-header {
-  @apply hidden px-5 justify-between items-stretch bg-white;
+  @apply hidden px-5 lg:px-0 justify-between items-stretch bg-white;
   @apply xl:flex;
 }
 .desktop-search-closer {
   @apply hidden;
 }
 .header--desktop-search {
-  top: -2.5rem !important;
+  
   .desktop-nav {
     @apply hidden;
   }
@@ -132,6 +228,26 @@
   text-p2-600 
   px-5 z-10 
   text-center; 
+&:hover{
+  @apply text-g1-200;
+}
+  &.active{
+
+    @apply text-p1-700 relative;
+
+    &:after{
+
+      content:'';
+      
+      background-image:url('/icons/chevron-down.svg');
+      right:-10px;
+      top:0;
+      bottom:0;
+      margin:auto;
+      width:20px;
+      height:25px;
+    }
+  }
 }
 .desktop-subnav {
   @apply grid grid-cols-3 gap-4;
@@ -145,17 +261,28 @@
 }
 .desktop-subnav__subtitle {
   @apply text-b4  text-p2-300 mb-2 font-normal mb-1;
+
+&:hover{
+  @apply text-g1-200;
+}
 }
 .desktop-subnav__links {
   @apply  flex flex-col text-p2-500;
     a{
       @apply my-1 block;
+      &:hover{
+        @apply text-g1-200;
+      }
     }
 }
 // HEADER: MOBILE
 .mobile-header {
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
   @apply xl:hidden;
+  &__top{
+
+    @apply px-4;
+  }
 }
 
 .header--mobile-search .mobile-header {
@@ -175,7 +302,7 @@
   height: 100%;
   background: #fff;
   .search {
-    @apply flex h-12;
+    @apply flex h-12 p-2;
   }
 }
 .mobile-header__top {
@@ -188,9 +315,8 @@
 .mobile-nav {
   @apply bg-white;
   li{
-
     a{
-        @apply text-p2-300 text-b3  font-body font-light;
+      @apply text-p2-300 text-b3  font-body font-light;
     }
   }
 }
@@ -231,8 +357,19 @@
 
   @apply focus:outline-none;
 
-  &:placeholder{
-    @apply font-medium;
+  &::placeholder{
+    @apply font-light     text-p2-500;; 
+  }
+  &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  @apply text-p2-500;
+  }
+  
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    @apply text-p2-500;
+  }
+  
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    @apply text-p2-500;
   }
 }
 
@@ -256,7 +393,6 @@
 .scroll-up {
   .header {
     top: 0px;
-    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.05);
   }
 }
 @screen lg {
