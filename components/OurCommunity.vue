@@ -20,7 +20,7 @@
       />
     </div>
     <div class="container">
-      <div class="text-center max-w-sm mx-auto mt-6 xl:max-w-md">
+      <div class="text-center max-w-sm mx-auto mt-6 xl:max-w-lg">
         <h2 class="text-p1-500 text-b1 xl:text-d3">Our Community</h2>
         <p class="text-p1-500 font-light my-8 text-b4 xl:text-b3">
           Lorem Ipsum is simply dummy text of the printing and typesetting
