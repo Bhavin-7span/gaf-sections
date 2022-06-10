@@ -1,6 +1,8 @@
 <template comments>
   <li>
-    <a href="#" class="desktop-nav__label">{{ data.label }}</a>
+    <a href="#" class="desktop-nav__label" :class="data.navclass"
+      >{{ data.label }}
+    </a>
     <!-- SUBNAV -->
     <div class="desktop-nav__items">
       <div class="container">

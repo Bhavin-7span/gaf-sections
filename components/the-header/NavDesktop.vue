@@ -13,6 +13,8 @@ export default {
   items: [
     {
       label: "Our Vision",
+      navclass: "active",
+
       items: [
         {
           label: "About us ",

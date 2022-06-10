@@ -169,30 +169,41 @@
     <TheHeaderSearch />
 
     <!-- ACTIONS -->
-    <div class="flex items-center">
+    <div class="flex items-center space-x-4">
       <a href="#mobile-nav" class="mobile-nav-user button">
         <svg
-          width="16"
-          height="16"
-          viewBox="0 0 16 16"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
             fill-rule="evenodd"
             clip-rule="evenodd"
-            d="M8 2C9.1 2 10 2.9 10 4C10 5.1 9.1 6 8 6C6.9 6 6 5.1 6 4C6 2.9 6.9 2 8 2ZM8 11C10.7 11 13.8 12.29 14 13V14H2V13.01C2.2 12.29 5.3 11 8 11ZM8 0C5.79 0 4 1.79 4 4C4 6.21 5.79 8 8 8C10.21 8 12 6.21 12 4C12 1.79 10.21 0 8 0ZM8 9C5.33 9 0 10.34 0 13V16H16V13C16 10.34 10.67 9 8 9Z"
-            fill="#7FE27B"
+            d="M12 6C13.1 6 14 6.9 14 8C14 9.1 13.1 10 12 10C10.9 10 10 9.1 10 8C10 6.9 10.9 6 12 6ZM12 15C14.7 15 17.8 16.29 18 17V18H6V17.01C6.2 16.29 9.3 15 12 15ZM12 4C9.79 4 8 5.79 8 8C8 10.21 9.79 12 12 12C14.21 12 16 10.21 16 8C16 5.79 14.21 4 12 4ZM12 13C9.33 13 4 14.34 4 17V20H20V17C20 14.34 14.67 13 12 13Z"
+            fill="#1C4953"
           />
         </svg>
       </a>
-      <Btn
-        class="desktop-search-opener ml-2"
-        icon="/icons/search.svg"
-        size="md"
-      />
 
-      <a href="# " class="desktop-search-closer ml-2">
+      <button class="desktop-search-opener ml-2">
+        <svg
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+            fill="#1C4953"
+          />
+        </svg>
+      </button>
+      <button class="desktop-search-closer ml-2">
         <svg
           width="18"
           height="18"
@@ -201,21 +212,13 @@
           xmlns="http://www.w3.org/2000/svg"
         >
           <path
-            d="M17 1L1 17"
-            stroke="#2D3530"
-            stroke-width="1.4"
+            d="M17 17L1 1M17 1L1 17"
+            stroke="#1C4953"
+            stroke-width="2"
             stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M1 1L17 17"
-            stroke="#2D3530"
-            stroke-width="1.4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
           />
         </svg>
-      </a>
+      </button>
     </div>
   </header>
 </template>
