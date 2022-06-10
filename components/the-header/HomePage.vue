@@ -4,7 +4,6 @@
       <div class="hero">
         <div class="hero__video">
           <div class="hero__video-wrap">
-<<<<<<< HEAD
             <img src="/images/video-poster.jpg" />
             <iframe
               src="https://www.youtube.com/embed/FSvFcvm9YKg"
@@ -13,16 +12,6 @@
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen
             ></iframe>
-=======
-            <img src="../../static/images/video-poster.jpg" id="overlay" />
-            <div id="player"></div>
-            <a
-              target="_blank"
-              href="https://developers.google.com/youtube/iframe_api_reference"
-            >
-              Youtube iframe API</a
-            >
->>>>>>> 0f8efe22a359abdada829ee9abcb7948d41c0e78
           </div>
         </div>
         <div class="hero__content">
