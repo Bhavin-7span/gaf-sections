@@ -11,7 +11,7 @@
     &:after{
       
      
-      @apply absolute top-auto bottom-1.5 text-g1-100  left-auto -right-3  text-b5  m-auto; 
+      @apply absolute top-auto bottom-1.5 text-p1-500  left-auto -right-3  text-b5  m-auto; 
       content:'>';
     }
     &:last-child{
@@ -27,6 +27,6 @@
     }
   }
   a {
-    @apply font-body text-b4 font-normal text-g1-200  ;
+    @apply font-body text-b4 font-normal text-p1-700  ;
   }
 }

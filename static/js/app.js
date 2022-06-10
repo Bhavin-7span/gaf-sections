@@ -22,6 +22,59 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+var tag = document.createElement("script");
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName("script")[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var player;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player("player", {
+    height: "170",
+    width: "300",
+    videoId: "NUsoVlDFqZg",
+    playerVars: {
+      autoplay: 0,
+      controls: 1,
+      info: 0,
+      showinfo: 0,
+      rel: 0,
+      modestbranding: 1,
+      wmode: "transparent",
+    },
+    events: {
+      onReady: onPlayerReady,
+      onStateChange: onPlayerStateChange,
+    },
+  });
+}
+// 4. The API will call this function when the video player is ready.
+function onPlayerReady(event) {
+  document.getElementById("demo").innerHTML = "video ready!";
+  let theOverlay = document.getElementById("overlay");
+  player.mute();
+  theOverlay.onclick = function () {
+    this.style.display = "none";
+    player.playVideo();
+    document.getElementById("demo").innerHTML =
+      "Hide overlay and play the video!";
+  };
+}
+// 5. The API calls this function when the player's state changes.
+//    The function indicates that when playing a video (state=1),
+//    the player should play for six seconds and then stop.
+function onPlayerStateChange(event) {
+  if (event.data == 2) {
+    document.getElementById("demo").innerHTML = "paused!";
+  }
+  if (event.data == 1) {
+    document.getElementById("demo").innerHTML = "play!";
+  }
+  if (event.data == -1) {
+    document.getElementById("demo").innerHTML = "Loading!";
+  }
+}
+
 /*
  * Event Slider
  */

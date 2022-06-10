@@ -27,6 +27,19 @@
         @apply  relative z-10 -mt-16 sm:-mt-20   md:-mt-36;  
     }
     .hero-title{
-        @apply  text-d5 text-p2-300  font-body font-extrabold md:text-d2  lg:mb-12 lg:text-d1;
+        @apply  text-b1  text-p2-300  font-body font-extrabold    lg:mb-12 lg:text-d1;
+
+       
     }
+}
+@screen md{
+
+    .hero{
+        .hero-title{
+     
+            font-size:79px;
+            line-height:1;
+            }
+    }
+   
 }
