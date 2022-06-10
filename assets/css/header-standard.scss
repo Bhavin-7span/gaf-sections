@@ -2,7 +2,7 @@
     @apply absolute font-body p-5 my-5 rounded-lg  text-left bg-cover bg-center bg-no-repeat left-0 right-0 top-auto bottom-0 w-11/12 m-auto z-10  ; 
     @apply md:relative  md:p-0 md:rounded-none md:my-0 lg:flex lg:flex-nowrap lg:items-center  lg:justify-between  ;
    
-    background-image: url('/images/h-stnadard-bg.svg'); 
+   
 
     .breadcrumbs{
         @apply hidden;
@@ -79,4 +79,10 @@
 .section-headerstandard .container{
 
     @apply p-0;
+}
+@media screen and (max-width: 992px) {
+    .header-standard{
+        background-image: url('/images/h-stnadard-bg.png'); 
+
+    }
 }
