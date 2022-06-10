@@ -14,13 +14,13 @@
         @apply flex items-baseline lg:w-1/2;
     }
     &__text {
-        @apply text-p1-700 text-b4 ;
+        @apply font-light text-d7 text-p1-700 md:text-p2-300;
     }
     &__title{
-        @apply mb-5 text-p1-700 text-d5 lg:text-d2 font-extrabold  ;
+        @apply mb-5 text-b1 font-medium text-p1-700 tracking-tight md:text-p2-300 md:font-extrabold lg:text-d2;
     }
     &__title-text{
-        @apply text-p1-700 text-b4 mb-2  ;
+        @apply text-b4 text-p1-700 font-normal md:text-p2-300 md:font-light lg:text-d7 lg:mb-1;
     }
 
 } 

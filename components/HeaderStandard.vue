@@ -6,7 +6,7 @@
         title="Our Programs"
         text="The George Alexander Foundation partners with selected institutions, primarily tertiary and other educational institutions, to offer scholarship and fellowship programs."
       />
-      <BlockImages classImage="imageblock__vertical" image="image-block2.jpg" />
+      <BlockImages classImage="imageblock__vertical" image="image-block1.jpg" />
     </div>
 
     <div class="standard-header">
@@ -18,7 +18,7 @@
 
       <BlockImages
         classImage="imageblock__horizontal"
-        image="image-block1.jpg"
+        image="image-block2.jpg"
       />
     </div>
 

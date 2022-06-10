@@ -2,15 +2,16 @@
   font-family: 'LL Riforma';
   font-weight: 300;
   font-display: swap;
-  src: url('/fonts/RiformaLLSub-Light.woff2') format('woff2'),
-    url('/fonts/RiformaLLSub-Light.woff') format('woff');
+  src: url('/fonts/RiformaLLSub-Light.woff2') format('woff'),
+    url('/fonts/RiformaLLSub-Light.woff') format('woff2'),
+    url('/fonts/RiformaLLWeb-Light.woff') format('woff');
 }
 @font-face {
   font-family: 'LL Riforma';
   font-weight: 400;
   font-display: swap;
-  src: url('/fonts/RiformaLLSub-Regul.woff2') format('woff2'),
-    url('/fonts/RiformaLLSub-Redium.woff') format('woff');
+  src: url('/fonts/RiformaLLSub-Regular.woff2') format('woff2'),
+    url('/fonts/RiformaLLSub-Regular.woff') format('woff');
 }
 @font-face {
   font-family: 'LL Riforma';
@@ -18,4 +19,23 @@
   font-display: swap;
   src: url('/fonts/RiformaLLSub-Medium.woff2') format('woff2'),
     url('/fonts/RiformaLLSub-Medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'LL Riforma';
+  font-weight: 700;
+  font-display: swap;
+  src: url('/fonts/RiformaLLSub-Bold.woff2') format('woff2'),
+    url('/fonts/RiformaLLSub-Bold.woff') format('woff'),
+    url('/fonts/RiformaLLWeb-Bold.woff2') format('woff2'),
+    url('/fonts/RiformaLLWeb-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'LL Riforma';
+  font-weight: 900;
+  font-display: swap;
+  src: url('/fonts/RiformaLLSub-Heavy.woff2') format('woff2'),
+    url('/fonts/RiformaLLSub-Heavy.woff') format('woff'),
+    url('/fonts/RiformaLLWeb-Heavy.woff2') format('woff2'),
+    url('/fonts/RiformaLLWeb-Heavy.woff') format('woff');
 }

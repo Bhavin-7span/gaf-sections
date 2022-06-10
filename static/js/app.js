@@ -22,7 +22,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
 var tag = document.createElement("script");
 tag.src = "https://www.youtube.com/iframe_api";
 var firstScriptTag = document.getElementsByTagName("script")[0];
@@ -41,12 +40,12 @@ function onYouTubeIframeAPIReady() {
       showinfo: 0,
       rel: 0,
       modestbranding: 1,
-      wmode: "transparent"
+      wmode: "transparent",
     },
     events: {
       onReady: onPlayerReady,
-      onStateChange: onPlayerStateChange
-    }
+      onStateChange: onPlayerStateChange,
+    },
   });
 }
 // 4. The API will call this function when the video player is ready.
@@ -54,7 +53,7 @@ function onPlayerReady(event) {
   document.getElementById("demo").innerHTML = "video ready!";
   let theOverlay = document.getElementById("overlay");
   player.mute();
-  theOverlay.onclick = function() {
+  theOverlay.onclick = function () {
     this.style.display = "none";
     player.playVideo();
     document.getElementById("demo").innerHTML =
@@ -75,8 +74,6 @@ function onPlayerStateChange(event) {
     document.getElementById("demo").innerHTML = "Loading!";
   }
 }
-
-
 
 /*
  * Event Slider
@@ -182,8 +179,10 @@ $(document).ready(function () {
     $(this).toggleClass("toggle--open");
     container.toggleClass("toggle-container--open");
   });
+  /**
+   * Homepage video
+   */
+  $(".hero__video-wrap").on("click", function () {
+    $(this).toggleClass("player");
+  });
 });
-
-/*************7th jun2022  video poster iFrame ********/
-
-// 2. This code loads the IFrame Player API code asynchronously
